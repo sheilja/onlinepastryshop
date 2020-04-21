@@ -1,0 +1,410 @@
+Create Procedure insertCategory
+(
+	
+	IN CNAME VARCHAR(100),
+	IN CCODE VARCHAR(100)
+)
+BEGIN
+	INSERT INTO category_tbl (category_name,category_code) values (CNAME , CCODE);
+END;
+Create Procedure updateCategory
+(
+	IN CATRGORYID BIGINT(10),
+    IN CNAME VARCHAR(100),
+	IN CCODE VARCHAR(100)
+)
+BEGIN
+	update category_tbl set category_name=CNAME,category_code=CCODE where category_id=CATRGORYID ;
+END;
+Create Procedure deleteCategory
+(
+	IN CATRGORYID BIGINT(10)
+)
+BEGIN
+	delete from category_tbl where category_id=CATRGORYID;
+END;
+==============================Theme============================
+
+Create Procedure insertTheme
+(
+
+	IN TNAME VARCHAR(100),
+	IN TCODE VARCHAR(100)
+)
+BEGIN
+	INSERT INTO theme (theme_name,theme_code) values (TNAME , TCODE);
+END;
+Create Procedure updateTheme
+(
+	IN THEMEID BIGINT(10),
+	IN TNAME VARCHAR(100),
+	IN TCODE VARCHAR(100)
+)
+BEGIN
+	update theme set theme_name=TNAME,theme_code=TCODE where theme_id=THEMEID ;
+END;
+Create Procedure deleteTheme
+(
+	IN THEMEID BIGINT(10)
+)
+BEGIN
+	delete from theme where theme_id=THEMEID;
+END;
+=============================Flavour=================================
+
+Create Procedure insertFlavour
+(
+
+	IN FNAME VARCHAR(100),
+	IN FCODE VARCHAR(100)
+)
+BEGIN
+	INSERT INTO flavour (flavour_name,flavour_code) values (FNAME , FCODE);
+END;
+Create Procedure updateFlavour
+(
+	IN FLAVOURID BIGINT(10),
+	IN FNAME VARCHAR(100),
+	IN FCODE VARCHAR(100)
+)
+BEGIN
+	update flavour set flavour_name = FNAME ,flavour_code = FCODE where flavour_id = FLAVOURID ;
+END;
+Create Procedure deleteFlavour
+(
+	IN FLAVOURID BIGINT(10)
+)
+BEGIN
+	delete from flavour where flavour_id=FLAVOURID;
+END;
+=========================GST===================================
+Create Procedure insertGst
+(
+
+	IN GGST_SLAB_NAME VARCHAR(100),
+	IN GCGST DECIMAL(18,2),
+	IN GSGST DECIMAL(18,2),
+	IN GIGST DECIMAL(18,2)
+)
+BEGIN
+	INSERT INTO gst_tbl (gst_slab_name,cgst,sgst,igst) values (GGST_SLAB_NAME , GCGST , GSGST , GIGST);
+END;
+Create Procedure updateGst
+(
+	IN GGST_SLAB_ID BIGINT(10),
+	IN GGST_SLAB_NAME VARCHAR(100),
+	IN GCGST DECIMAL(18,2),
+	IN GSGST DECIMAL(18,2),
+	IN GIGST DECIMAL(18,2)
+
+)
+BEGIN
+	update gst_tbl set gst_slab_name=GGST_SLAB_NAME,cgst=GCGST,sgst=GSGST,igst=GIGST where gst_slab_id=GGST_SLAB_ID ;
+END;
+Create Procedure deleteGst
+(
+	IN GGST_SLAB_ID BIGINT(10)
+)
+BEGIN
+	delete from gst_tbl where gst_slab_id=GGST_SLAB_ID;
+END;
+===============================Admin Registartion=======================
+
+Create Procedure insertAdmin
+(
+	IN AADMIN_NAME VARCHAR(100),
+	IN COMPANYID BIGINT(10),
+	IN AADMIN_MOB BIGINT(20),
+	IN AADMIN_EMAIL VARCHAR(20),
+    IN AADMIN_PASSWORD VARCHAR(100),
+    IN AADMIN_IMG VARCHAR(200)
+)
+BEGIN
+	INSERT INTO admin_registration_tbl (admin_name,company_id,admin_mob,admin_email,admin_password,admin_img) values (ADMIN_NAME , COMPANYID , AADMIN_MOB , AADMIN_EMAIL , AADMIN_PASSWORD ,AADMIN_IMG);
+END;
+Create Procedure updateAdmin
+(
+	IN AADMIN_ID BIGINT(20),
+	IN AADMIN_NAME VARCHAR(100),
+	IN COMPANYID BIGINT(10),
+	IN AADMIN_MOB BIGINT(20),
+	IN AADMIN_EMAIL VARCHAR(200),
+    IN AADMIN_PASSWORD VARCHAR(100),
+    IN AADMIN_IMG VARCHAR(200)
+)
+BEGIN
+	update admin_registration_tbl set admin_name=AADMIN_NAME,company_id=COMPANYID,admin_mob=AADMIN_MOB,admin_email=AADMIN_EMAIL,admin_password=AADMIN_PASSWORD,admin_img=AADMIN_IMG where admin_id=AADMIN_ID ;
+END;
+Create Procedure deleteAdmin
+(
+	IN AADMIN_ID VARCHAR(100)
+)
+BEGIN
+	delete from gst_tbl where admin_id=AADMIN_ID;
+END;
+=====================================Company===================================
+Create Procedure insertCompany
+(
+	IN COMPANYNAME VARCHAR(100),
+	IN COMPANYMOB BIGINT(10),
+	IN COMPANYALT_MOB BIGINT(10),
+	IN COMPANYEMAIL VARCHAR(100),
+    IN COMPANYADD VARCHAR(200),
+    IN COMPANYCITY VARCHAR(100),
+    IN COMPANYGST_IN_NO VARCHAR(100),
+    IN COMPANYBANK_NAME VARCHAR(100),
+    IN COMPANYAC_NO VARCHAR(100),
+    IN COMPANYIFSC VARCHAR(100),
+    IN COMPANYPIN_NO VARCHAR(100),
+    IN COMPANYTIN_NO VARCHAR(100),
+    IN COMPANYCST_NO VARCHAR(100),
+    IN COMPANYSTAX_NO VARCHAR(100),
+    IN COMPANYGENERAL_LIC_NO VARCHAR(100),
+    IN COMPANYLOGO_IMAGE VARCHAR(100)
+
+)
+BEGIN
+	INSERT INTO company_tbl (company_name,company_mob,company_alt_mob,company_email,company_add,company_city,company_GST_in_no,company_bank_name,company_ac_no,company_IFSC,company_pin_no,company_tin_no,company_CST_no,company_stax_no,company_general_LIC_no,company_logo_image) values (COMPANYNAME,COMPANYMOB,COMPANYALT_MOB,COMPANYEMAIL,COMPANYADD,COMPANYCITY,COMPANYGST_IN_NO,COMPANYBANK_NAME,COMPANYAC_NO,COMPANYIFSC,COMPANYPIN_NO,COMPANYTIN_NO,COMPANYCST_NO,COMPANYSTAX_NO,COMPANYGENERAL_LIC_NO,COMPANYLOGO_IMAGE);
+END;
+Create Procedure updateCompany
+(
+	IN COMPANYID VARCHAR(100),
+	IN COMPANYNAME VARCHAR(100),
+	IN COMPANYMOB BIGINT(10),
+	IN COMPANYALT_MOB BIGINT(10),
+	IN COMPANYEMAIL VARCHAR(100),
+    IN COMPANYADD VARCHAR(200),
+    IN COMPANYCITY VARCHAR(100),
+    IN COMPANYGST_IN_NO VARCHAR(100),
+    IN COMPANYBANK_NAME VARCHAR(100),
+    IN COMPANYAC_NO VARCHAR(100),
+    IN COMPANYIFSC VARCHAR(100),
+    IN COMPANYPIN_NO VARCHAR(100),
+    IN COMPANYGENERAL_LIC_NO VARCHAR(100),
+    IN COMPANYLOGO_IMAGE VARCHAR(100)
+
+ )
+BEGIN
+	update company_tbl set company_name=COMPANYNAME,company_mob=COMPANYMOB,company_alt_mob=COMPANYALT_MOB,company_email=COMPANYEMAIL,company_add=COMPANYADD,company_city=COMPANYCITY,company_GST_in_no=COMPANYGST_IN_NO,company_bank_name=COMPANYBANK_NAME,company_ac_no=COMPANYAC_NO,company_IFSC=COMPANYIFSC,company_pin_no=COMPANYPIN_NO,company_general_LIC_no=COMPANYGENERAL_LIC_NO,company_logo_image=COMPANYLOGO_IMAGE where company_id=COMPANYID ;
+END;
+Create Procedure deleteCompany
+(
+	IN COMPANYID VARCHAR(100)
+)
+BEGIN
+	delete from company_tbl where company_id=COMPANYID;
+END;
+====================================Product=============================
+
+Create Procedure insertProduct
+(
+	IN PPRODUCT_IMAGE VARCHAR(200),
+	IN PCATEGORY_ID BIGINT(10),
+	IN PPRODUCT_NAME VARCHAR(20),
+    IN PTHEME_ID BIGINT(10),
+    IN PGST_SLAB_ID BIGINT(20),  
+    IN PPRICE BIGINT(20), 
+    IN PWEIGHT BIGINT(20), 
+    IN PMIN_WEIGHT BIGINT(20), 
+    IN PMAX_WEIGHT BIGINT(20), 
+	IN PDISCRIPTION1 VARCHAR(500),
+	IN PDISCRIPTION2 VARCHAR(500),
+	IN PDISCRIPTION3 VARCHAR(500),
+    IN FEATURED VARCHAR(500)	
+)
+BEGIN
+	INSERT INTO product_tbl (product_image,category_id,product_name,theme_id,gst_slab_id,price_per_kg,weight,max_weight,min_weight,discription1,discription2,discription3,is_featured) values (PPRODUCT_IMAGE , PCATEGORY_ID , PPRODUCT_NAME , PTHEME_ID , PGST_SLAB_ID , PPRICE , PWEIGHT , PMIN_WEIGHT , PMAX_WEIGHT , PDISCRIPTION1 , PDISCRIPTION2 , PDISCRIPTION3 , FEATURED);
+END;
+Create Procedure updateProduct
+(
+	IN PPRODUCT_ID BIGINT(10),
+	IN PPRODUCT_IMAGE VARCHAR(200),
+	IN PCATEGORY_ID BIGINT(10),
+	IN PPRODUCT_NAME VARCHAR(20),
+    IN PTHEME_ID BIGINT(10),
+    IN PGST_SLAB_ID BIGINT(20),  
+    IN PPRICE BIGINT(20), 
+    IN PWEIGHT BIGINT(20), 
+    IN PMIN_WEIGHT BIGINT(20), 
+    IN PMAX_WEIGHT BIGINT(20),    
+	IN PDISCRIPTION1 VARCHAR(500),
+	IN PDISCRIPTION2 VARCHAR(500),
+	IN PDISCRIPTION3 VARCHAR(500),
+	IN FEATURED VARCHAR(500)
+)
+BEGIN
+	update product_tbl set product_image=PPRODUCT_IMAGE,category_id=PCATEGORY_ID,product_name=PPRODUCT_NAME,theme_id=PTHEME_ID,gst_slab_id=PGST_SLAB_ID,price_per_kg=PPRICE,weight=PWEIGHT,min_weight=PMIN_WEIGHT,max_weight=PMAX_WEIGHT,discription1=PDISCRIPTION1,discription2=PDISCRIPTION2,discription3=PDISCRIPTION3,is_featured=FEATURED where product_id=PPRODUCT_ID ;
+END;
+Create Procedure deleteProduct
+(
+	IN PRODUCTID BIGINT(10)
+)
+BEGIN
+	delete from product_tbl where product_id=PRODUCTID;
+END;
+
+=================================Order Not Available===========================
+
+Create Procedure insertDate
+(
+    
+	IN DDATE DATE,
+	IN DDATE_AVAILIBILITY TINYINT(4),
+	IN DWEIGHT BIGINT(10)	         
+)
+BEGIN
+	INSERT INTO order_not_available_tbl (date1,date_availability,max_weight) values (DDATE , DDATE_AVAILIBILITY , DWEIGHT);
+END;
+Create Procedure updateDate
+(
+    IN DDATE_ID BIGINT(10),
+   
+	IN DDATE DATE,
+	IN DDATE_AVAILIBILITY TINYINT(4),
+	IN DWEIGHT BIGINT(10))
+BEGIN
+	update order_not_available_tbl set date1=DDATE,date_availability=DDATE_AVAILIBILITY,max_weight=DWEIGHT where date_id=DDATE_ID ;
+END;
+Create Procedure deleteDate
+(
+	IN DDATE_ID BIGINT(10)
+)
+BEGIN
+	delete from order_not_available_tbl where date_id=DDATE_ID;
+END;
+============================Pincode======================================
+
+Create Procedure insertPincode
+(
+    IN PINCODENUMBER BIGINT(10),
+	IN SHIPPINGCOST BIGINT(10)     
+)
+BEGIN
+	INSERT INTO pincode_tbl (pincode_number,shipping_charge) values (PINCODENUMBER,PINCODENUMBER);
+END;
+Create Procedure updatePincode
+(
+    IN PPINCODE_NUMBER BIGINT(10),
+    IN SHIPPING BIGINT(10)
+	
+)BEGIN
+	update pincode_tbl set shipping_charge=SHIPPING where pincode_number=PPINCODE_NUMBER ;
+END;
+Create Procedure deletePincode
+(
+	IN PPINCODE_NUMBER BIGINT(10)
+)
+BEGIN
+	delete from pincode_tbl where pincode_number=PPINCODE_NUMBER;
+END;
+
+============================Conatact Us========================================
+Create Procedure insertContact
+(
+    
+	IN CCONTACT_NAME VARCHAR(100),
+	IN CCONTACT_EMAIL VARCHAR(100),
+	IN CCONTACT_MOB BIGINT(10),
+    IN CCONTACT_SUBJECT VARCHAR(100),
+	IN CCONTACT_MESSAGE VARCHAR(300)	
+
+
+)
+BEGIN
+	INSERT INTO contact_us (contact_name,contact_mob,contact_email,contact_subject,contact_message) values (CCONTACT_NAME,CCONTACT_MOB,CCONTACT_EMAIL,CCONTACT_SUBJECT,CCONTACT_MESSAGE);
+END;
+Create Procedure updateContact
+(
+
+	IN CCONTACTID BIGINT(10),
+	
+	IN CCONTACT_NAME VARCHAR(100),
+	IN CCONTACT_EMAIL VARCHAR(100),
+	IN CCONTACT_MOB BIGINT(10),
+    IN CCONTACT_SUBJECT VARCHAR(100),
+	IN CCONTACT_MESSAGE VARCHAR(300)	
+)
+BEGIN
+	update contact_us set contact_name=CCONTACT_NAME,contact_mob=CCONTACT_EMAIL,contact_email=CCONTACT_MOB,contact_subject=CCONTACT_SUBJECT,contact_message=CCONTACT_MESSAGE where contact_id=CCONTACTID ;
+END;
+Create Procedure deleteContact
+(
+	IN CCONTACTID BIGINT(10)
+)
+BEGIN
+	delete from contact_us where contact_id=CCONTACTID;
+END;
+===================================subscriber===============================
+Create Procedure insertSubscriber
+(
+	IN SSUBSCRIBER_EMAIL_ID VARCHAR(200)
+
+)
+BEGIN
+	INSERT INTO subscriber_tbl(subscriber_email_id) values (SSUBSCRIBER_EMAIL_ID);
+END;
+Create Procedure updateSubscriber
+(
+	IN SSUBSCRIBER_EMAIL_ID VARCHAR(200),
+    IN SSUBSCRIBER_ID BIGINT(10)
+)
+BEGIN
+	update subscriber_tbl set subscriber_email_id=SSUBSCRIBER_EMAIL_ID where subscriber_id=SSUBSCRIBER_ID;
+END;
+Create Procedure deleteSubscriber
+(
+	IN SSUBSCRIBER_ID BIGINT(10)
+)
+BEGIN
+	delete from subscriber_tbl where subscriber_id=SSUBSCRIBER_ID;
+END;
+===============================================didcription==========================================
+Create Procedure insertDiscription
+(
+    IN THEMEID BIGINT(10),
+	IN DISCRIPTION1 VARCHAR(600)     
+)
+BEGIN
+	INSERT INTO discription (theme_id,discription) values (THEMEID,DISCRIPTION1);
+END;
+Create Procedure updateDiscription
+(
+    IN DISCIPTIONID BIGINT(10),
+    IN THEMEID BIGINT(10),
+	IN DISCRIPTION1 VARCHAR(600)
+   	
+)BEGIN
+	update discription set theme_id=THEMEID,discription=DISCRIPTION1 where discription_id=DISCIPTIONID ;
+END;
+Create Procedure deleteDiscription
+(
+	IN DISCIPTIONID BIGINT(10)
+)
+BEGIN
+	delete from discription where discription_id=DISCIPTIONID;
+END;
+===============================================Subscriber==========================================
+Create Procedure insertSubscriber
+(
+    IN THEMEID BIGINT(10),
+	IN DISCRIPTION1 VARCHAR(600)     
+)
+BEGIN
+	INSERT INTO discription (theme_id,discription) values (THEMEID,DISCRIPTION1);
+END;
+Create Procedure updateDiscription
+(
+    IN DISCIPTIONID BIGINT(10),
+    IN THEMEID BIGINT(10),
+	IN DISCRIPTION1 VARCHAR(600)
+   	
+)BEGIN
+	update discription set theme_id=THEMEID,discription=DISCRIPTION1 where discription_id=DISCIPTIONID ;
+END;
+Create Procedure deleteDiscription
+(
+	IN DISCIPTIONID BIGINT(10)
+)
+BEGIN
+	delete from discription where discription_id=DISCIPTIONID;
+END;

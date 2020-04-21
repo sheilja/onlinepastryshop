@@ -1,0 +1,1373 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from cskadmin.com/v3.2/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 13:39:57 GMT -->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Calendar | CSK - Admin Template | Zeasts</title>
+		<!-- Icon -->
+		<link rel="icon" href="datas/images/icon.ico">
+		<!-- Bootstrap Core CSS -->
+		<link href="datas/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="datas/assets/animate.css-master/animate.min.css">
+		<!-- Page Level CSS -->
+		<!-- Full Calendar CSS -->
+		<link href="datas/assets/calendar-master/vendors/fullcalendar/fullcalendar.css" rel="stylesheet">
+		<!-- Full calendar print CSS -->
+		<link href="datas/assets/calendar-master/vendors/fullcalendar/fullcalendar.print.css" rel="stylesheet" media="print">
+		<!-- Calendar CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/css/calendar.css">
+		<!-- Theme  CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/min/csk.min.css">
+		<!-- MediaQuery CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/css/media-query.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-fixed-top notification navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<span class="csk-brand"><img src="datas/images/icon.png" class="img-responsive" alt="csk-brand icon" ></span>
+					</a>
+				</div>
+				<a href="#menu-toggle" class="" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+					<ul class="settingsmenu">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog pull-right"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+								<li class="divider"></li>
+								<li><a href="#">User stats <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
+								<li class="divider"></li>
+								<li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
+								<li class="divider"></li>
+								<li><a href="#">Favourites Snippets <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
+								<li class="divider"></li>
+								<li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+							</ul>
+						</li>
+					</ul>
+				<!-- Navbar Right Menu -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li class="dropdown messages-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-envelope-o"></i>
+								<div class="notify">
+									<span class="ring"></span>
+									<span class="ring-point"></span>
+								</div>
+							</a>
+							<div class="dropdown-menu">
+								<ul class="nav nav-tabs" id="myTab">
+									<li class="active">
+										<a data-target="#Inbox" data-toggle="tab">
+											<i class="icon icon-li-drawer"></i>
+										</a>
+									</li>
+									<li>
+										<a data-target="#Sent" data-toggle="tab">
+											<i class="icon icon-li-paper-plane"></i>
+										</a>
+									</li>
+									<li>
+										<a data-target="#Archive" data-toggle="tab">
+											<i class="icon icon-li-trash"></i>
+										</a>
+									</li>
+									<li class="icon">
+										<a href="#"><i class="icon icon-li-magnifier"></i></a>
+									</li>
+									<li class="icon">
+										<a href="#"><i class="icon icon-li-plus"></i></a>
+									</li>
+								</ul>
+								<div class="tab-content" id="message">
+									<div class="tab-pane active" id="Inbox">
+										<ul class="message-body">
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Zeasts </h4>
+														<small>Lorem ipsum dolor sit </small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> Just now
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Jonathan </h4>
+														<small>The European languages </small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 1 min ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Agnes </h4>
+														<small>Aenean vulputate eleifend</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 3 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Marvel </h4>
+														<small>One morning, when Gregor</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 6 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Joseph </h4>
+														<small>The new common language</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 1 day ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Frank </h4>
+														<small>Nullam dictum felis eu</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 2 days ago
+													</small>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane" id="Sent">
+										<ul class="message-body">
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Theresa </h4>
+														<small>Integer tincidunt. Cras</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> Just now
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Jettie </h4>
+														<small>Sed ut perspiciatis </small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 5 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Ronald </h4>
+														<small>tellus eget condimentum</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 10 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Amy </h4>
+														<small>Nemo enim ipsam voluptatem</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 1 day ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Bryce </h4>
+														<small>nisi ut aliquid ex ea</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 2 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Brenda </h4>
+														<small>At vero eos et accusamus</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 3 days ago
+													</small>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane" id="Archive">
+										<ul class="message-body">
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Laura </h4>
+														<small>blandit vel, luctus </small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 5 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Elizabeth </h4>
+														<small>Nullam quis ante.</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 10 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Mack </h4>
+														<small>Nam libero tempore,</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 14 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Jonathan </h4>
+														<small>Far far away,</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 20 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Joseph </h4>
+														<small>The new common language</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 21 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Frank </h4>
+														<small>Nullam dictum felis eu</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 25 days ago
+													</small>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer">
+									<a href="#Viewall">View all Messages</a>
+								</div>
+							</div>
+						</li>
+						<!-- # messages-menu -->
+						<!-- Notifications Menu -->
+						<li class="dropdown notifications-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-bell-o"></i>
+								<div class="notify"><span class="ring"></span><span class="ring-point"></span></div>
+							</a>
+							<ul class="dropdown-menu notification-dropdown">
+								<li class="header">You have 7 notifications</li>
+								<li class="notification-body">
+									<!-- Inner Menu: contains the notifications -->
+									<ul class="notification">
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-user-plus"></i> 5 new members joined today
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-warning"></i> Something wrong going on
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-shopping-cart"></i> 5 new products added
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-usd"></i> Price change your product
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-archive"></i> 3 orders not yet dispatched
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-cubes"></i> 3 orders not yet dispatched
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-user-secret"></i> 5 new vendors registered
+											</a>
+										</li>
+										<!-- end notification -->
+									</ul>
+								</li>
+								<li class="footer">
+									<a href="#">View all</a>
+								</li>
+							</ul>
+						</li>
+						<!-- User Account Menu -->
+						<li class="dropdown user user-menu">
+							<!-- Menu Toggle Button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<!-- The user image in the navbar-->
+								<img src="datas/images/avatars/captain-avatar.png" class="user-image" alt="User Image">
+								<!-- hidden-xs hides the username on small devices so only the image appears. -->
+							</a>
+							<ul class="dropdown-menu">
+								<!-- The user image in the menu -->
+								<li class="user-header">
+									<img src="datas/images/avatars/captain-avatar.png" class="user-image" alt="User Image">
+									<p>
+										Zeasts
+										<small>Template Admin</small>
+									</p>
+								</li>
+								<!-- Menu Body -->
+								<li>
+									<a href="#account"><i class="icon icon-li-female-user sIcon"></i> Account Settings</a>
+								</li>
+								<li>
+									<a href="#account"><i class="icon icon-li-fire sIcon"></i> Balance</a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-li-config sIcon"></i> Sellers Info.</a>
+								</li>
+								<!-- Menu Footer-->
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="profile.html" class="btn btn-info">Profile</a>
+									</div>
+									<div class="pull-right">
+										<a href="sign-in.html" class="btn btn-danger">Sign out</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- # navbar-custom-menu -->
+			</div>
+			<!-- # container-fluid -->
+		</nav>
+		<!-- #Fixed navbar -->
+		<!-- Main Body content starts here -->
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Sidebar -->
+			<div id="sidebar-wrapper">
+				<aside class="sidebar">
+					<nav class="sidebar-nav" id="sidebarscroll">
+						<ul class="metismenu ripple" id="menu">
+							<li class="notify">
+								<a href="#" aria-expanded="false">
+									<span class="ring"></span>
+									<span class="sidebar-nav-item-icon icon-li-speedometer fa-lg notify"></span>
+									<span class="sidebar-nav-item aText">Dashboard</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="dashboard-1.html">
+											<span class="sidebar-nav-item-icon ion-ios-speedometer fa-fw"></span>
+											<span class="aText">Dashboard.1</span>
+										</a>
+									</li>
+									<li>
+										<a href="project-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-desktop fa-fw">
+											</span>
+											<span class="aText">Dashboard.2
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="dashboard-3.html">
+											<span class="sidebar-nav-item-icon fa fa-laptop fa-fw">
+											</span>
+											<span class="aText">Dashboard.3
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="invoice-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-mobile fa-fw">
+											</span>
+											<span class="aText">Dashboard.4
+											</span>
+											<i class="fa fa-star text-danger"></i>
+										</a>
+									</li>  
+								</ul>
+							</li>
+								<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon fa fa-folder-open-o fa-lg">
+									</span>
+									<span class="sidebar-nav-item aText">Projects
+									</span>
+									<span class="fa arrow fa-fw">
+									</span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="project-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-desktop fa-fw">
+											</span>
+											<span class="aText">Dashboard
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="project-list.html">
+											<span class="sidebar-nav-item-icon fa fa-list fa-fw">
+											</span>
+											<span class="aText"> Project list
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="project-detail.html">
+											<span class="sidebar-nav-item-icon fa fa-eye fa-fw">
+											</span>
+											<span class="aText">Project View
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon fa fa-newspaper-o fa-lg">
+									</span>
+									<span class="sidebar-nav-item aText">Invoice
+									</span>
+									<i class="badge badge-success">New</i>
+									<span class="fa arrow fa-fw">
+									</span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="invoice-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-mobile fa-fw">
+											</span>
+											<span class="aText">Dashboard
+											</span>
+											<i class="fa fa-star text-warning"></i>
+										</a>
+									</li>
+									<li>
+										<a href="invoice-list.html">
+											<span class="sidebar-nav-item-icon fa fa-list-alt fa-fw">
+											</span>
+											<span class="aText"> Invoice list
+											</span>
+											<i class="fa fa-star text-warning"></i>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-bar-chart fa-lg"></span>
+									<span class="sidebar-nav-item aText">Charts</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="sparkline-chart.html">
+											<span class="sidebar-nav-item-icon ion-connection-bars fa-fw"></span>
+											<span class="aText">Sparkline Chart</span>
+										</a>
+									</li>
+									<li>
+										<a href="bar-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-bar-chart fa-fw"></span>
+											<span class="aText">Bar Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="pie-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-pie-chart fa-fw"></span>
+											<span class="aText">Pie Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="line-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-line-chart fa-fw"></span>
+											<span class="aText">Line Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="area-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-area-chart fa-fw"></span>
+											<span class="aText">Area Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="bubble-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-circle fa-fw"></span>
+											<span class="aText">Bubble Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="3d-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-cubes fa-fw"></span>
+											<span class="aText">3D Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="combination-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-bar-chart fa-fw"></span>
+											<span class="aText">Combination Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="dynamic-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-line-chart fa-fw"></span>
+											<span class="aText">Dynamic Charts</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-globe-1 fa-lg"></span>
+									<span class="sidebar-nav-item aText">Maps</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="maps.html">
+											<span class="sidebar-nav-item-icon fa fa-map-marker fa-fw"></span>
+											<span class="aText">Vector Map</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon icon-li-opened-book fa-lg"></span>
+									<span class="sidebar-nav-item aText">Forms</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="forms-ui.html">
+											<span class="sidebar-nav-item-icon ion-ios-paper fa-fw"></span>
+											<span class="aText"> Forms Ui</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-wizard.html">
+											<span class="sidebar-nav-item-icon ion-ios-list fa-fw"></span>
+											<span class="aText"> Form Wizard</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-validations.html">
+											<span class="sidebar-nav-item-icon fa fa-file fa-fw"></span>
+											<span class="aText"> Form Validations</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-elements.html">
+											<span class="sidebar-nav-item-icon ion-ios-lightbulb fa-fw"></span>
+											<span class="aText">Form Elements</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-picker.html">
+											<span class="sidebar-nav-item-icon fa fa-pencil fa-fw"></span>
+											<span class="aText">Form pickers</span>
+										</a>
+									</li>
+									<li>
+										<a href="editor.html">
+											<span class="sidebar-nav-item-icon fa fa-pencil fa-fw"></span>
+											<span class="aText">Editor</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-tablet fa-lg"></span>
+									<span class="sidebar-nav-item aText">Tables</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="advanced-tables.html">
+											<span class="sidebar-nav-item-icon fa fa-database fa-fw"></span>
+											<span class="aText">Advanced Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="basic-tables.html">
+											<span class="sidebar-nav-item-icon ion-ios-paper fa-fw"></span>
+											<span class="aText">Basic Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="data-tables.html">
+											<span class="sidebar-nav-item-icon fa fa-database fa-fw"></span>
+											<span class="aText">Data Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="responsive-table.html">
+											<span class="sidebar-nav-item-icon fa fa-clipboard fa-fw"></span>
+											<span class="aText">Responsive Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="editable-tables.html">
+											<span class="sidebar-nav-item-icon fa fa-pencil fa-fw"></span>
+											<span class="aText">Editable Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="dynamic-table.html">
+											<span class="sidebar-nav-item-icon fa fa-file-archive-o fa-fw"></span>
+											<span class="aText">Dynamic-table</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="notify">
+								<a href="#" aria-expanded="false">
+									<span class="ring"></span>
+									<span class="sidebar-nav-item-icon icon-li-envelope-letter fa-lg"></span>
+									<span class="sidebar-nav-item aText">Mail Box</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="mailbox1.html">
+											<span class="sidebar-nav-item-icon fa fa-inbox fa-fw"></span>
+											<span class="aText">Inbox 1</span>
+										</a>
+									</li>
+									<li>
+										<a href="mailbox2.html">
+											<span class="sidebar-nav-item-icon fa fa-inbox fa-fw"></span>
+											<span class="aText">Inbox 2</span>
+										</a>
+									</li>
+									<li>
+										<a href="view-mail.html">
+											<span class="sidebar-nav-item-icon fa fa-envelope-o fa-fw"></span>
+											<span class="aText">View Mail</span>
+										</a>
+									</li>
+									<li>
+										<a href="compose.html">
+											<span class="sidebar-nav-item-icon ion-ios-list-outline fa-fw"></span>
+											<span class="aText">Compose</span>
+										</a>
+									</li>
+									<li>
+									<a href="email-template.html">
+										<span class="sidebar-nav-item-icon fa fa-envelope-square fa-fw"></span>
+										<span class="aText">Email Template</span>
+											<i class="fa fa-star text-danger"></i>
+									</a>
+								</li>
+								</ul>
+							</li>
+							<li class="active">
+								<a href="calendar.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-calendar fa-lg"></span>
+									<span class="sidebar-nav-item aText">Calender</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-diamond fa-lg"></span>
+									<span class="sidebar-nav-item aText">UI Elements</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="alerts.html">
+											<span class="sidebar-nav-item-icon fa fa-bell-o fa-fw"></span>
+											<span class="aText">Alerts</span>
+										</a>
+									</li>
+									<li>
+										<a href="animate.html">
+											<span class="sidebar-nav-item-icon ion-ios-settings fa-fw"></span>
+											<span class="aText">Animations</span>
+										</a>
+									</li>
+									<li>
+										<a href="buttons.html">
+											<span class="sidebar-nav-item-icon ion-ios-toggle fa-fw"></span>
+											<span class="aText">Buttons</span>
+										</a>
+									</li>
+									<li>
+										<a href="button-select.html">
+											<span class="sidebar-nav-item-icon fa fa-check-square-o fa-fw"></span>
+											<span class="aText">Button-select</span>
+										</a>
+									</li>
+									<li>
+										<a href="dragit.html">
+											<span class="sidebar-nav-item-icon fa fa-arrows fa-fw"></span>
+											<span class="aText">Draggable panels</span> 
+										</a>
+									</li>
+									<li>
+										<a href="progress-bar.html">
+											<span class="sidebar-nav-item-icon fa fa-tags fa-fw"></span>
+											<span class="aText">Progress Bar</span>
+										</a>
+									</li>
+									<li>
+										<a href="grid.html">
+											<span class="sidebar-nav-item-icon fa fa-th fa-fw"></span>
+											<span class="aText">Grid</span>
+										</a>
+									</li>
+									<li>
+										<a href="icons.html">
+											<span class="sidebar-nav-item-icon fa fa-flag-o fa-fw"></span>
+											<span class="aText">Icons</span>
+										</a>
+									</li>
+									<li>
+										<a href="panels.html">
+											<span class="sidebar-nav-item-icon ion-android-notifications-off fa-fw"></span>
+											<span class="aText">Panels And Wells</span>
+										</a>
+									</li>
+									<li>
+										<a href="sweet-alert.html">
+											<span class="sidebar-nav-item-icon ion-ios-timer-outline fa-fw"></span>
+											<span class="aText">Sweet Alerts</span>
+										</a>
+									</li>
+									<li>
+										<a href="modal.html">
+											<span class="sidebar-nav-item-icon fa fa-building-o fa-fw"></span>
+											<span class="aText">Modals</span>
+										</a>
+									</li>
+									<li>
+										<a href="carousel.html">
+											<span class="sidebar-nav-item-icon fa fa-code-fork fa-fw"></span>
+											<span class="aText">Carousel</span>
+										</a>
+									</li>
+									<li>
+										<a href="nestables.html">
+											<span class="sidebar-nav-item-icon fa fa-table fa-fw"></span>
+											<span class="aText">Nestables</span>
+										</a>
+									</li>
+									<li>
+										<a href="range-slider.html">
+											<span class="sidebar-nav-item-icon fa fa-sliders fa-fw">
+											</span>
+											<span class="aText">Range Sliders
+											</span>
+											
+										</a>
+									</li>
+									<li>
+										<a href="tooltips.html">
+											<span class="sidebar-nav-item-icon fa fa-book fa-fw"></span>
+											<span class="aText">Tooltips UI</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="notify">
+								<a href="#" aria-expanded="false">
+									<span class="ring"></span>
+									<span class="sidebar-nav-item-icon icon-li-documents fa-lg"></span>
+									<span class="sidebar-nav-item aText">Pages</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="empty.html">
+											<span class="sidebar-nav-item-icon ion-ios-paper fa-fw"></span>
+											<span class="aText">Blank Page</span>
+										</a>
+									</li>
+									<li>
+										<a href="blog-index.html">
+											<span class="sidebar-nav-item-icon fa fa-wpforms fa-fw"></span>
+											<span class="aText">Blog</span>
+											<i class="fa fa-star text-danger"></i>
+										</a>
+									</li>
+									<li>
+										<a href="forgot.html">
+											<span class="sidebar-nav-item-icon fa fa-key fa-fw"></span>
+											<span class="aText">Forgot</span>
+										</a>
+									</li>
+									<li>
+										<a href="invoice.html">
+											<span class="sidebar-nav-item-icon fa fa-envelope fa-fw"></span>
+											<span class="aText">Invoice</span>
+										</a>
+									</li>
+									<li>
+										<a href="profile.html">
+											<span class="sidebar-nav-item-icon fa fa-user fa-fw"></span>
+											<span class="aText">profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="sign-in.html">
+											<span class="sidebar-nav-item-icon fa fa-sign-in fa-fw"></span>
+											<span class="aText">Sign in</span>
+										</a>
+									</li>
+									<li>
+										<a href="sign-up.html">
+											<span class="sidebar-nav-item-icon fa fa-user-plus fa-fw"></span>
+											<span class="aText">Sign up</span>
+										</a>
+									</li>
+									<li>
+										<a href="lock.html">
+											<span class="sidebar-nav-item-icon fa fa-lock fa-fw"></span>
+											<span class="aText">Lock Screen</span>
+										</a>
+									</li>
+									<li>
+										<a href="400.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 400</span>
+										</a>
+									</li>
+									<li>
+										<a href="403.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 403</span>
+										</a>
+									</li>
+									<li>
+										<a href="404.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 404</span>
+										</a>
+									</li>
+									<li>
+										<a href="500.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 500</span>
+										</a>
+									</li>
+									<li>
+										<a href="503.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 503</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon fa fa-spinner fa-lg"></span>
+									<span class="sidebar-nav-item aText">On Load</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="onload-sign-in.html">
+											<span class="sidebar-nav-item-icon fa fa-sign-in fa-fw"></span>
+											<span class="aText">On Load Sign-in</span>
+										</a>
+									</li>
+									<li>
+										<a href="onload-subscribe.html">
+											<span class="sidebar-nav-item-icon fa fa-sign-in fa-fw"></span>
+											<span class="aText">On Load Subscribe</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="todo.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-list fa-lg"></span>
+									<span class="sidebar-nav-item aText">To Do</span>
+								</a>
+							</li>
+							<li>
+								<a href="dabba.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-layers fa-lg"></span>
+									<span class="sidebar-nav-item aText">Dabba</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-present fa-lg"></span>
+									<span class="sidebar-nav-item aText">Multi-Dropdown</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="#" aria-expanded="false">
+											<span class="sidebar-nav-item-icon icon-li-right fa-lg"></span>
+											<span class="sidebar-nav-item aText">Dropdown.1</span>
+											<span class="fa arrow fa-fw"></span>
+										</a>
+										<ul aria-expanded="false" class="collapse">
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">First</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">Second</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" aria-expanded="false">
+											<span class="sidebar-nav-item-icon icon-li-right fa-lg"></span>
+											<span class="sidebar-nav-item aText">Dropdown.2</span>
+											<span class="fa arrow fa-fw"></span>
+										</a>
+										<ul aria-expanded="false" class="collapse">
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">First</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">Second</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="documentation.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-document fa-lg"></span>
+									<span class="sidebar-nav-item aText">Documentation</span>
+								</a>
+							</li>
+							<li>
+								<a href="faq.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-question fa-lg"></span>
+									<span class="sidebar-nav-item aText">FAQ</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+			</div>
+			<!-- # Sidebar-wrapper -->
+			<!-- Page Content -->
+			<div id="page-content-wrapper">
+				<!-- Breadcrumb starts here -->
+				<div class="row csk-breadcrumb">
+					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+						<h4 class="page-title">Calender</h4>
+					</div>
+					<div class="col-lg-9 col-md-8 col-sm-8 hidden-xs">
+						<ol class="breadcrumb">
+							<li><a href="#">Dashboard</a></li>
+							<li><a href="#">Calender</a></li>
+						</ol>
+					</div>
+				</div>
+				<!-- #Breadcrumb -->
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12 table-responsive">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Basic Calendar</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="clearfix">
+										<div class="calendar1">
+											<div class="col-md-3 add-event-calendar">
+												<div id='external-events'>
+													<div class="text-center">
+														<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+														<i class="fa fa-plus"></i> Add Event
+														</button>
+													</div>
+													<hr>
+													<p class="disabled">Drag and drop your event or click in the calendar</p>
+													<div class='fc-event label label-success'>Purchae Contract</div>
+													<div class='fc-event label label-warning'>Application</div>
+													<div class='fc-event label label-danger'>Submitted</div>
+													<div class='fc-event label label-info'>Initial Disclosures</div>
+													<div class='fc-event label label-primary'>Approved</div>
+													<div class='fc-event label label-default'>Locked</div>
+												</div>
+												<div class="remove">
+													<input type="checkbox"  class="fa fa-circle" /> <small>Remove after Drop</small>
+												</div>
+											</div>
+											<div class="hidden-md hidden-lg">
+												<hr>
+											</div>
+											<div class="col-md-9 calendar-view">
+												<div id='calendar'></div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- #row -->
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel panel-default panel-pale-red-bt">
+							<div class="panel-heading">
+								<h3 class="panel-title">Beautiful Flat Calendar 2</h3>
+							</div>
+							<div class="panel-body">
+								<div class="row">
+									<div class="calendar-2">
+										<div class="col-lg-8 col-md-12 border-red">
+											<br>
+											<div id="calendar2"></div>
+											<div class="row weather">
+												<div class="col-lg-5 col-md-12 text-center">
+													<i class="fa fa-cloud cloud"></i>
+												</div>
+												<div class="col-md-7 report">
+													<small class="weather-option">
+													Clouds &amp; Sunshine
+													</small>
+													<h3 class="celcius">26<sup>o</sup>C</h3>
+												</div>
+											</div>
+										</div>
+										<div class="col-lg-4 col-md-12 danger-bg">
+											<div class="share text-right">
+												<i class="fa fa-share-alt"></i>
+											</div>
+											<div class="calender">
+												<div class="day">
+												</div>
+												<div class="month">
+												</div>
+												<div class="date">
+												</div>
+											</div>
+											<div class="input">
+												<div class="input-group">
+													<input type="text" class="form-control" placeholder="Add Notes" aria-describedby="basic-addon2">
+													<a href="#" class="input-group-addon" id="basic-addon2">
+														<i class="fa fa-plus"></i>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- #row -->
+			</div>
+			<!-- # page-content-wrapper -->
+		</div>
+		<!-- # wrapper -->
+		<!-- Modal  -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+						<h4 class="modal-title" id="myModalLabel">Modal title</h4>
+					</div>
+					<form>
+						<div class="modal-body">
+							<div class="row">
+								<div class="col-md-8">
+									<input type="text" name="event-input" id="event-id" placeholder="Event Name" required="required">
+								</div>
+								<div class="col-md-4">
+									<div class="dropdown pull-right">
+										<div class="input-group">
+											<input type="text" Class="form-control dropdown-input">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+												<span class="caret"></span>
+												</button>
+												<ul class="dropdown-menu dropdown-select">
+													<li><a href="#" class="btn btn-danger">Important</a></li>
+													<li><a href="#" class="btn btn-success">Client Meeiting </a></li>
+													<li><a href="#" class="btn btn-warning">Completed</a></li>
+													<li><a href="#" class="btn btn-info">Alarm</a></li>
+													<li><a href="#" class="btn btn-primary">Something else here</a></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="submit" id="send-event" class="btn btn-success" data-dismiss="modal">Add Event</button>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+		<!-- #Modal -->
+		<!-- GoogleApi jQuery -->
+		<script type="text/javascript" src="datas/assets/jquery-1.12.4/jquery-1.12.4.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="datas/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Metis menu min.JS -->
+		<script type="text/javascript" src="datas/assets/metisMenu-master/dist/metisMenu.min.js"></script>
+		<!-- Slim Scroll -->
+		<script type="text/javascript" src="datas/assets/jQuery-slimScroll-1.3.8/jquery.slimscroll.js"></script>
+		<!-- Page Level JS  -->
+		<!-- Moment min JS -->
+		<script src="datas/assets/calendar-master/vendors/fullcalendar/lib/moment.min.js"></script>
+		<!--Jquery-ui.custom.min JS  -->
+		<script src="datas/assets/calendar-master/vendors/fullcalendar/lib/jquery-ui.custom.min.js"></script>
+		<!-- Fullcalendar min JS -->
+		<script src="datas/assets/calendar-master/vendors/fullcalendar/fullcalendar.min.js"></script>
+		<!-- App JS -->
+		<script type="text/javascript" src="datas/js/app.js"></script>
+		<script>
+			$(document).ready(function() {
+				/* initialize the external events
+				-----------------------------------------------------------------*/
+				$('#external-events .fc-event').each(function() {
+					// store data so the calendar knows to render an event upon drop
+					$(this).data('event', {
+						title: $.trim($(this).text()), // use the element's text as the event title
+						stick: false, // maintain when user navigates (see docs on the renderEvent method),
+						editable: true,
+						className: 'captain'
+					});
+					// make the event draggable using jQuery UI
+					$(this).draggable({
+						zIndex: 999,
+						revert: true, // will cause the event to go back to its
+						revertDuration: 0 //  original position after the drag
+					});
+				});
+				/* initialize the calendar
+				-----------------------------------------------------------------*/
+				$('#calendar').fullCalendar({
+					header: {
+						left: 'prev',
+						center: 'title, month,agendaWeek',
+						right: 'next',
+						default: false
+					},
+					prev: 'fa fa-arrow',
+					next: 'right-single-arrow',
+					// defaultView: '',
+					editable: true,
+					droppable: true, // this allows things to be dropped onto the calendar
+					drop: function() {
+						$(this).remove();
+					},
+					events: [{
+						title: 'All Day Event',
+						start: '2016-08-01'
+					}, {
+						title: 'Long Event',
+						start: '2016-08-04',
+						end: '2016-08-07'
+					}, {
+						id: 999,
+						title: 'Repeating Event',
+						start: '2016-08-09T16:00:00'
+					}, {
+						id: 999,
+						title: 'Repeating Event',
+						start: '2016-08-16T16:00:00'
+					}, {
+						title: '41`Conference Meeting',
+						start: '2016-08-11',
+						end: '2016-08-13'
+					}, {
+						title: 'Birthday Party',
+						start: '2016-08-13T07:00:00'
+					}, {
+						title: 'Click for Google',
+						url: 'http://zeasts.com/',
+						start: '2016-08-28'
+					}]
+				});
+				// Calendar 2
+				$('#calendar2').fullCalendar({
+					header: {
+						left: 'prev',
+						center: 'title, month,agendaWeek',
+						right: 'next',
+						default: false
+					},
+					prev: 'fa fa-arrow',
+					next: 'right-single-arrow',
+					// defaultView: '',
+					editable: true,
+					droppable: true, // this allows things to be dropped onto the calendar
+					drop: function() {
+						$(this).remove();
+					}
+				});
+			});
+			$(document).on("click", ".fc-event-container .fc-event", function() {
+				$(this).toggleClass('view');
+			});
+			// Getting the live date and month for the Calendar 2
+			$(window).load(function() {
+					var d = new Date();
+					var day = d.getDate();
+					var month = new Array();
+					month[0] = "January";
+					month[1] = "February";
+					month[2] = "March";
+					month[3] = "April";
+					month[4] = "May";
+					month[5] = "June";
+					month[6] = "July";
+					month[7] = "August";
+					month[8] = "September";
+					month[9] = "October";
+					month[10] = "November";
+					month[11] = "December";
+					var monthn = month[d.getMonth()];
+					var year = d.getFullYear()
+					var d = new Date();
+					var weekday = new Array(7);
+					weekday[0] = "Sunday";
+					weekday[1] = "Monday";
+					weekday[2] = "Tuesday";
+					weekday[3] = "Wednesday";
+					weekday[4] = "Thursday";
+					weekday[5] = "Friday";
+					weekday[6] = "Saturday";
+					var week = weekday[d.getDay()];
+					$(".calender .date").append(day + '<small> of&nbsp;</small> ');
+					$(".calender .month").append(monthn);
+					$(".calender .day").append(week);
+				})
+				// Adding Events to the calendar 1
+			$(window).load(function() {
+				$(document).ready(function() {
+					$('#send-event').click(function() {
+						var value = $('#event-id').val();
+						$("#external-events").append('<div class="fc-event label ui-draggable ui-draggable-handle" >' + value + '</div>');
+						$("#event-id").val("");
+					})
+				})
+			})
+		</script>
+	</body>
+
+<!-- Mirrored from cskadmin.com/v3.2/calendar.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 13:40:07 GMT -->
+</html>

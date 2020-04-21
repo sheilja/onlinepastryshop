@@ -1,0 +1,1884 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from cskadmin.com/v3.2/forms-ui.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 13:38:55 GMT -->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>Forms UI | CSK - Admin Template | Zeasts</title>
+		<!-- Icon -->
+		<link rel="icon" href="datas/images/icon.ico">
+		<!-- Bootstrap Core CSS -->
+		<link href="datas/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="datas/assets/animate.css-master/animate.min.css">
+		<!-- Theme  CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/min/csk.min.css">
+		<!-- MediaQuery CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/css/media-query.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-fixed-top notification navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						<span class="csk-brand"><img src="datas/images/icon.png" class="img-responsive" alt="csk-brand icon" ></span>
+					</a>
+				</div>
+				<a href="#menu-toggle" class="" id="menu-toggle"><i class="fa fa-bars" aria-hidden="true"></i></a>
+					<ul class="settingsmenu">
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog pull-right"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+								<li class="divider"></li>
+								<li><a href="#">User stats <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
+								<li class="divider"></li>
+								<li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
+								<li class="divider"></li>
+								<li><a href="#">Favourites Snippets <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
+								<li class="divider"></li>
+								<li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+							</ul>
+						</li>
+					</ul>
+				<!-- Navbar Right Menu -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li class="dropdown messages-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-envelope-o"></i>
+								<div class="notify">
+									<span class="ring"></span>
+									<span class="ring-point"></span>
+								</div>
+							</a>
+							<div class="dropdown-menu">
+								<ul class="nav nav-tabs" id="myTab">
+									<li class="active">
+										<a data-target="#Inbox" data-toggle="tab">
+											<i class="icon icon-li-drawer"></i>
+										</a>
+									</li>
+									<li>
+										<a data-target="#Sent" data-toggle="tab">
+											<i class="icon icon-li-paper-plane"></i>
+										</a>
+									</li>
+									<li>
+										<a data-target="#Archive" data-toggle="tab">
+											<i class="icon icon-li-trash"></i>
+										</a>
+									</li>
+									<li class="icon">
+										<a href="#"><i class="icon icon-li-magnifier"></i></a>
+									</li>
+									<li class="icon">
+										<a href="#"><i class="icon icon-li-plus"></i></a>
+									</li>
+								</ul>
+								<div class="tab-content" id="message">
+									<div class="tab-pane active" id="Inbox">
+										<ul class="message-body">
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Zeasts </h4>
+														<small>Lorem ipsum dolor sit </small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> Just now
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Jonathan </h4>
+														<small>The European languages </small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 1 min ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Agnes </h4>
+														<small>Aenean vulputate eleifend</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 3 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Marvel </h4>
+														<small>One morning, when Gregor</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 6 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Joseph </h4>
+														<small>The new common language</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 1 day ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Frank </h4>
+														<small>Nullam dictum felis eu</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 2 days ago
+													</small>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane" id="Sent">
+										<ul class="message-body">
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Theresa </h4>
+														<small>Integer tincidunt. Cras</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> Just now
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Jettie </h4>
+														<small>Sed ut perspiciatis </small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 5 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Ronald </h4>
+														<small>tellus eget condimentum</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 10 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Amy </h4>
+														<small>Nemo enim ipsam voluptatem</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 1 day ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Bryce </h4>
+														<small>nisi ut aliquid ex ea</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 2 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Brenda </h4>
+														<small>At vero eos et accusamus</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 3 days ago
+													</small>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane" id="Archive">
+										<ul class="message-body">
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Laura </h4>
+														<small>blandit vel, luctus </small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 5 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Elizabeth </h4>
+														<small>Nullam quis ante.</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 10 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Mack </h4>
+														<small>Nam libero tempore,</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 14 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Jonathan </h4>
+														<small>Far far away,</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 20 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Joseph </h4>
+														<small>The new common language</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 21 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Frank </h4>
+														<small>Nullam dictum felis eu</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock"></i> 25 days ago
+													</small>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer">
+									<a href="#Viewall">View all Messages</a>
+								</div>
+							</div>
+						</li>
+						<!-- # messages-menu -->
+						<!-- Notifications Menu -->
+						<li class="dropdown notifications-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-bell-o"></i>
+								<div class="notify"><span class="ring"></span><span class="ring-point"></span></div>
+							</a>
+							<ul class="dropdown-menu notification-dropdown">
+								<li class="header">You have 7 notifications</li>
+								<li class="notification-body">
+									<!-- Inner Menu: contains the notifications -->
+									<ul class="notification">
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-user-plus"></i> 5 new members joined today
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-warning"></i> Something wrong going on
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-shopping-cart"></i> 5 new products added
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-usd"></i> Price change your product
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-archive"></i> 3 orders not yet dispatched
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-cubes"></i> 3 orders not yet dispatched
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-user-secret"></i> 5 new vendors registered
+											</a>
+										</li>
+										<!-- end notification -->
+									</ul>
+								</li>
+								<li class="footer">
+									<a href="#">View all</a>
+								</li>
+							</ul>
+						</li>
+						<!-- User Account Menu -->
+						<li class="dropdown user user-menu">
+							<!-- Menu Toggle Button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<!-- The user image in the navbar-->
+								<img src="datas/images/avatars/captain-avatar.png" class="user-image" alt="User Image">
+								<!-- hidden-xs hides the username on small devices so only the image appears. -->
+							</a>
+							<ul class="dropdown-menu">
+								<!-- The user image in the menu -->
+								<li class="user-header">
+									<img src="datas/images/avatars/captain-avatar.png" class="user-image" alt="User Image">
+									<p>
+										Zeasts
+										<small>Template Admin</small>
+									</p>
+								</li>
+								<!-- Menu Body -->
+								<li>
+									<a href="#account"><i class="icon icon-li-female-user sIcon"></i> Account Settings</a>
+								</li>
+								<li>
+									<a href="#account"><i class="icon icon-li-fire sIcon"></i> Balance</a>
+								</li>
+								<li>
+									<a href="#"><i class="icon icon-li-config sIcon"></i> Sellers Info.</a>
+								</li>
+								<!-- Menu Footer-->
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="profile.html" class="btn btn-info">Profile</a>
+									</div>
+									<div class="pull-right">
+										<a href="sign-in.html" class="btn btn-danger">Sign out</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- # navbar-custom-menu -->
+			</div>
+			<!-- # container-fluid -->
+		</nav>
+		<!-- Main Body content starts here -->
+		<!-- Wrapper -->
+		<div id="wrapper">
+			<!-- Sidebar -->
+			<div id="sidebar-wrapper">
+				<aside class="sidebar">
+					<nav class="sidebar-nav" id="sidebarscroll">
+						<ul class="metismenu ripple" id="menu">
+							<li class="notify">
+								<a href="#" aria-expanded="false">
+									<span class="ring"></span>
+									<span class="sidebar-nav-item-icon icon-li-speedometer fa-lg notify"></span>
+									<span class="sidebar-nav-item aText">Dashboard</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="dashboard-1.html">
+											<span class="sidebar-nav-item-icon ion-ios-speedometer fa-fw"></span>
+											<span class="aText">Dashboard.1</span>
+										</a>
+									</li>
+									<li>
+										<a href="project-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-desktop fa-fw">
+											</span>
+											<span class="aText">Dashboard.2
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="dashboard-3.html">
+											<span class="sidebar-nav-item-icon fa fa-laptop fa-fw">
+											</span>
+											<span class="aText">Dashboard.3
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="invoice-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-mobile fa-fw">
+											</span>
+											<span class="aText">Dashboard.4
+											</span>
+											<i class="fa fa-star text-danger"></i>
+										</a>
+									</li>  
+								</ul>
+							</li>
+								<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon fa fa-folder-open-o fa-lg">
+									</span>
+									<span class="sidebar-nav-item aText">Projects
+									</span>
+									<span class="fa arrow fa-fw">
+									</span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="project-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-desktop fa-fw">
+											</span>
+											<span class="aText">Dashboard
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="project-list.html">
+											<span class="sidebar-nav-item-icon fa fa-list fa-fw">
+											</span>
+											<span class="aText"> Project list
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="project-detail.html">
+											<span class="sidebar-nav-item-icon fa fa-eye fa-fw">
+											</span>
+											<span class="aText">Project View
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon fa fa-newspaper-o fa-lg">
+									</span>
+									<span class="sidebar-nav-item aText">Invoice
+									</span>
+									<i class="badge badge-success">New</i>
+									<span class="fa arrow fa-fw">
+									</span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="invoice-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-mobile fa-fw">
+											</span>
+											<span class="aText">Dashboard
+											</span>
+											<i class="fa fa-star text-warning"></i>
+										</a>
+									</li>
+									<li>
+										<a href="invoice-list.html">
+											<span class="sidebar-nav-item-icon fa fa-list-alt fa-fw">
+											</span>
+											<span class="aText"> Invoice list
+											</span>
+											<i class="fa fa-star text-warning"></i>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-bar-chart fa-lg"></span>
+									<span class="sidebar-nav-item aText">Charts</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="sparkline-chart.html">
+											<span class="sidebar-nav-item-icon ion-connection-bars fa-fw"></span>
+											<span class="aText">Sparkline Chart</span>
+										</a>
+									</li>
+									<li>
+										<a href="bar-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-bar-chart fa-fw"></span>
+											<span class="aText">Bar Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="pie-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-pie-chart fa-fw"></span>
+											<span class="aText">Pie Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="line-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-line-chart fa-fw"></span>
+											<span class="aText">Line Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="area-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-area-chart fa-fw"></span>
+											<span class="aText">Area Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="bubble-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-circle fa-fw"></span>
+											<span class="aText">Bubble Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="3d-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-cubes fa-fw"></span>
+											<span class="aText">3D Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="combination-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-bar-chart fa-fw"></span>
+											<span class="aText">Combination Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="dynamic-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-line-chart fa-fw"></span>
+											<span class="aText">Dynamic Charts</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-globe-1 fa-lg"></span>
+									<span class="sidebar-nav-item aText">Maps</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="maps.html">
+											<span class="sidebar-nav-item-icon fa fa-map-marker fa-fw"></span>
+											<span class="aText">Vector Map</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="active">
+								<a href="#" aria-expanded="true">
+									<span class="sidebar-nav-item-icon icon icon-li-opened-book fa-lg"></span>
+									<span class="sidebar-nav-item aText">Forms</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="true" class="collapse in">
+									<li class="active">
+										<a href="forms-ui.html">
+											<span class="sidebar-nav-item-icon ion-ios-paper fa-fw"></span>
+											<span class="aText"> Forms Ui</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-wizard.html">
+											<span class="sidebar-nav-item-icon ion-ios-list fa-fw"></span>
+											<span class="aText"> Form Wizard</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-validations.html">
+											<span class="sidebar-nav-item-icon fa fa-file fa-fw"></span>
+											<span class="aText"> Form Validations</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-elements.html">
+											<span class="sidebar-nav-item-icon ion-ios-lightbulb fa-fw"></span>
+											<span class="aText">Form Elements</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-picker.html">
+											<span class="sidebar-nav-item-icon fa fa-pencil fa-fw"></span>
+											<span class="aText">Form pickers</span>
+										</a>
+									</li>
+									<li>
+										<a href="editor.html">
+											<span class="sidebar-nav-item-icon fa fa-pencil fa-fw"></span>
+											<span class="aText">Editor</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-tablet fa-lg"></span>
+									<span class="sidebar-nav-item aText">Tables</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="advanced-tables.html">
+											<span class="sidebar-nav-item-icon fa fa-database fa-fw"></span>
+											<span class="aText">Advanced Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="basic-tables.html">
+											<span class="sidebar-nav-item-icon ion-ios-paper fa-fw"></span>
+											<span class="aText">Basic Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="data-tables.html">
+											<span class="sidebar-nav-item-icon fa fa-database fa-fw"></span>
+											<span class="aText">Data Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="responsive-table.html">
+											<span class="sidebar-nav-item-icon fa fa-clipboard fa-fw"></span>
+											<span class="aText">Responsive Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="editable-tables.html">
+											<span class="sidebar-nav-item-icon fa fa-pencil fa-fw"></span>
+											<span class="aText">Editable Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="dynamic-table.html">
+											<span class="sidebar-nav-item-icon fa fa-file-archive-o fa-fw"></span>
+											<span class="aText">Dynamic-table</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="notify">
+								<a href="#" aria-expanded="false">
+									<span class="ring"></span>
+									<span class="sidebar-nav-item-icon icon-li-envelope-letter fa-lg"></span>
+									<span class="sidebar-nav-item aText">Mail Box</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="mailbox1.html">
+											<span class="sidebar-nav-item-icon fa fa-inbox fa-fw"></span>
+											<span class="aText">Inbox 1</span>
+										</a>
+									</li>
+									<li>
+										<a href="mailbox2.html">
+											<span class="sidebar-nav-item-icon fa fa-inbox fa-fw"></span>
+											<span class="aText">Inbox 2</span>
+										</a>
+									</li>
+									<li>
+										<a href="view-mail.html">
+											<span class="sidebar-nav-item-icon fa fa-envelope-o fa-fw"></span>
+											<span class="aText">View Mail</span>
+										</a>
+									</li>
+									<li>
+										<a href="compose.html">
+											<span class="sidebar-nav-item-icon ion-ios-list-outline fa-fw"></span>
+											<span class="aText">Compose</span>
+										</a>
+									</li>
+									<li>
+									<a href="email-template.html">
+										<span class="sidebar-nav-item-icon fa fa-envelope-square fa-fw"></span>
+										<span class="aText">Email Template</span>
+											<i class="fa fa-star text-danger"></i>
+									</a>
+								</li>
+								</ul>
+							</li>
+							<li>
+								<a href="calendar.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-calendar fa-lg"></span>
+									<span class="sidebar-nav-item aText">Calender</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-diamond fa-lg"></span>
+									<span class="sidebar-nav-item aText">UI Elements</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="alerts.html">
+											<span class="sidebar-nav-item-icon fa fa-bell-o fa-fw"></span>
+											<span class="aText">Alerts</span>
+										</a>
+									</li>
+									<li>
+										<a href="animate.html">
+											<span class="sidebar-nav-item-icon ion-ios-settings fa-fw"></span>
+											<span class="aText">Animations</span>
+										</a>
+									</li>
+									<li>
+										<a href="buttons.html">
+											<span class="sidebar-nav-item-icon ion-ios-toggle fa-fw"></span>
+											<span class="aText">Buttons</span>
+										</a>
+									</li>
+									<li>
+										<a href="button-select.html">
+											<span class="sidebar-nav-item-icon fa fa-check-square-o fa-fw"></span>
+											<span class="aText">Button-select</span>
+										</a>
+									</li>
+									<li>
+										<a href="dragit.html">
+											<span class="sidebar-nav-item-icon fa fa-arrows fa-fw"></span>
+											<span class="aText">Draggable panels</span> 
+										</a>
+									</li>
+									<li>
+										<a href="progress-bar.html">
+											<span class="sidebar-nav-item-icon fa fa-tags fa-fw"></span>
+											<span class="aText">Progress Bar</span>
+										</a>
+									</li>
+									<li>
+										<a href="grid.html">
+											<span class="sidebar-nav-item-icon fa fa-th fa-fw"></span>
+											<span class="aText">Grid</span>
+										</a>
+									</li>
+									<li>
+										<a href="icons.html">
+											<span class="sidebar-nav-item-icon fa fa-flag-o fa-fw"></span>
+											<span class="aText">Icons</span>
+										</a>
+									</li>
+									<li>
+										<a href="panels.html">
+											<span class="sidebar-nav-item-icon ion-android-notifications-off fa-fw"></span>
+											<span class="aText">Panels And Wells</span>
+										</a>
+									</li>
+									<li>
+										<a href="sweet-alert.html">
+											<span class="sidebar-nav-item-icon ion-ios-timer-outline fa-fw"></span>
+											<span class="aText">Sweet Alerts</span>
+										</a>
+									</li>
+									<li>
+										<a href="modal.html">
+											<span class="sidebar-nav-item-icon fa fa-building-o fa-fw"></span>
+											<span class="aText">Modals</span>
+										</a>
+									</li>
+									<li>
+										<a href="carousel.html">
+											<span class="sidebar-nav-item-icon fa fa-code-fork fa-fw"></span>
+											<span class="aText">Carousel</span>
+										</a>
+									</li>
+									<li>
+										<a href="nestables.html">
+											<span class="sidebar-nav-item-icon fa fa-table fa-fw"></span>
+											<span class="aText">Nestables</span>
+										</a>
+									</li>
+									<li>
+										<a href="range-slider.html">
+											<span class="sidebar-nav-item-icon fa fa-sliders fa-fw">
+											</span>
+											<span class="aText">Range Sliders
+											</span>
+											
+										</a>
+									</li>
+									<li>
+										<a href="tooltips.html">
+											<span class="sidebar-nav-item-icon fa fa-book fa-fw"></span>
+											<span class="aText">Tooltips UI</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="notify">
+								<a href="#" aria-expanded="false">
+									<span class="ring"></span>
+									<span class="sidebar-nav-item-icon icon-li-documents fa-lg"></span>
+									<span class="sidebar-nav-item aText">Pages</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="empty.html">
+											<span class="sidebar-nav-item-icon ion-ios-paper fa-fw"></span>
+											<span class="aText">Blank Page</span>
+										</a>
+									</li>
+									<li>
+										<a href="blog-index.html">
+											<span class="sidebar-nav-item-icon fa fa-wpforms fa-fw"></span>
+											<span class="aText">Blog</span>
+											<i class="fa fa-star text-danger"></i>
+										</a>
+									</li>
+									<li>
+										<a href="forgot.html">
+											<span class="sidebar-nav-item-icon fa fa-key fa-fw"></span>
+											<span class="aText">Forgot</span>
+										</a>
+									</li>
+									<li>
+										<a href="invoice.html">
+											<span class="sidebar-nav-item-icon fa fa-envelope fa-fw"></span>
+											<span class="aText">Invoice</span>
+										</a>
+									</li>
+									<li>
+										<a href="profile.html">
+											<span class="sidebar-nav-item-icon fa fa-user fa-fw"></span>
+											<span class="aText">profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="sign-in.html">
+											<span class="sidebar-nav-item-icon fa fa-sign-in fa-fw"></span>
+											<span class="aText">Sign in</span>
+										</a>
+									</li>
+									<li>
+										<a href="sign-up.html">
+											<span class="sidebar-nav-item-icon fa fa-user-plus fa-fw"></span>
+											<span class="aText">Sign up</span>
+										</a>
+									</li>
+									<li>
+										<a href="lock.html">
+											<span class="sidebar-nav-item-icon fa fa-lock fa-fw"></span>
+											<span class="aText">Lock Screen</span>
+										</a>
+									</li>
+									<li>
+										<a href="400.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 400</span>
+										</a>
+									</li>
+									<li>
+										<a href="403.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 403</span>
+										</a>
+									</li>
+									<li>
+										<a href="404.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 404</span>
+										</a>
+									</li>
+									<li>
+										<a href="500.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 500</span>
+										</a>
+									</li>
+									<li>
+										<a href="503.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 503</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon fa fa-spinner fa-lg"></span>
+									<span class="sidebar-nav-item aText">On Load</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="onload-sign-in.html">
+											<span class="sidebar-nav-item-icon fa fa-sign-in fa-fw"></span>
+											<span class="aText">On Load Sign-in</span>
+										</a>
+									</li>
+									<li>
+										<a href="onload-subscribe.html">
+											<span class="sidebar-nav-item-icon fa fa-sign-in fa-fw"></span>
+											<span class="aText">On Load Subscribe</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="todo.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-list fa-lg"></span>
+									<span class="sidebar-nav-item aText">To Do</span>
+								</a>
+							</li>
+							<li>
+								<a href="dabba.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-layers fa-lg"></span>
+									<span class="sidebar-nav-item aText">Dabba</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-present fa-lg"></span>
+									<span class="sidebar-nav-item aText">Multi-Dropdown</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="#" aria-expanded="false">
+											<span class="sidebar-nav-item-icon icon-li-right fa-lg"></span>
+											<span class="sidebar-nav-item aText">Dropdown.1</span>
+											<span class="fa arrow fa-fw"></span>
+										</a>
+										<ul aria-expanded="false" class="collapse">
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">First</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">Second</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" aria-expanded="false">
+											<span class="sidebar-nav-item-icon icon-li-right fa-lg"></span>
+											<span class="sidebar-nav-item aText">Dropdown.2</span>
+											<span class="fa arrow fa-fw"></span>
+										</a>
+										<ul aria-expanded="false" class="collapse">
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">First</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">Second</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="documentation.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-document fa-lg"></span>
+									<span class="sidebar-nav-item aText">Documentation</span>
+								</a>
+							</li>
+							<li>
+								<a href="faq.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-question fa-lg"></span>
+									<span class="sidebar-nav-item aText">FAQ</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+			</div>
+			<!-- # Sidebar-wrapper -->
+			<!-- Page Content-wrapper -->
+			<div id="page-content-wrapper">
+				<!-- Breadcrumb  -->
+				<div class="row csk-breadcrumb">
+					<div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
+						<h4 class="page-title">Long-Inline Forms</h4>
+					</div>
+					<div class="col-lg-9 col-md-8 col-sm-8 hidden-xs">
+						<ol class="breadcrumb">
+							<li><a href="#">Dashboard</a></li>
+							<li><a href="#">Forms</a></li>
+							<li><a href="#">Long-Inline Forms</a></li>
+						</ol>
+					</div>
+				</div>
+				<!-- #Breadcrumb -->
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title"> Creative Form </h3>
+							</div>
+							<div class="panel-body">
+								<div class="col-md-12 creative-form ">
+									<form action="#" class="form-inline lead-big">
+										<div class="form-group">
+											<label for="name">Hello, I am <span>Your name</span></label>
+											<input type="text" id="name" placeholder="@maridlcrmn" required> and
+										</div>
+										<div class="form-group">
+											<label for="company"> I work in <span>Your company</span></label>
+											<input type="text" id="company" placeholder="Awesome Company"> .
+										</div>
+										<div class="form-group">
+											<label for="freelancer"> I'm looking for <span>Freelance professional</span></label>
+											<select id="freelancer">
+												<option value="0" selected>Someone</option>
+												<option value="1">Frontend Developer</option>
+												<option value="2">Backend Developer</option>
+												<option value="3">UI/UX Designer</option>
+												<option value="4">Graphic Designer</option>
+												<option value="5">Web designer</option>
+											</select>
+											who
+										</div>
+										<div class="form-group">
+											<label for="subject"> can help me in <span>Describe your project</span></label>
+											<textarea id="subject" placeholder="big amazing project" required></textarea>
+											and
+										</div>
+										<div class="form-group">
+											<label for="time"> I have <span>Time Left</span></label>
+											<select id="time">
+												<option value="0" selected>1 weeks</option>
+												<option value="1">2 weeks</option>
+												<option value="2">3 weeks</option>
+												<option value="3">a month</option>
+												<option value="4">limited time</option>
+												<option value="5">unlimited time</option>
+											</select>
+											for do it. Please, send an
+										</div>
+										<div class="form-group">
+											<label> email to <span>Your email</span></label>
+											<input type="email" placeholder="name@mail.com" required> soon as possible.
+										</div>
+										<button type="submit" class="btn btn-default btn-lg submit"> <i class="fa fa-angle-right"></i></button>
+										.
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- #row -->
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Simple Form With Icon</h3>
+							</div>
+							<div class="panel-body">
+								<div class="col-sm-12 col-xs-12">
+									<form>
+										<div class="form-group">
+											<label>User Name</label>
+											<div class="input-group">
+												<div class="input-group-addon"><i class="fa fa-user"></i></div>
+												<input type="text" class="form-control exampleInputuname" placeholder="Username">
+											</div>
+										</div>
+										<div class="form-group">
+											<label>Email address</label>
+											<div class="input-group">
+												<div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
+												<input type="email" class="form-control exampleInputEmail1" placeholder="Enter email">
+											</div>
+										</div>
+										<div class="form-group">
+											<label>Password</label>
+											<div class="input-group">
+												<div class="input-group-addon"><i class="fa fa-lock "></i></div>
+												<input type="password" class="form-control exampleInputpwd1" placeholder="Enter Pwd">
+											</div>
+										</div>
+										<div class="form-group">
+											<label>Confirm Password</label>
+											<div class="input-group">
+												<div class="input-group-addon"><i class="fa fa-lock"></i></div>
+												<input type="password" class="form-control exampleInputpwd2" placeholder="Confirm Pwd">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="checkbox ">
+												<input type="checkbox">
+												<label>Remember me</label>
+											</div>
+										</div>
+										<button type="submit" class="btn btn-success ">Submit</button>
+										<button type="submit" class="btn btn-danger ">Cancel</button>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<h3 class="panel-title">Simple Form With Right Icon</h3>
+							</div>
+							<div class="panel-body">
+								<div class="col-sm-12 col-xs-12">
+									<form>
+										<div class="form-group">
+											<label>User Name</label>
+											<div class="input-group">
+												<input type="text" class="form-control exampleInputuname" placeholder="Username">
+												<div class="input-group-addon"><i class="fa fa-user"></i></div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label>Email address</label>
+											<div class="input-group">
+												<input type="email" class="form-control exampleInputEmail1" placeholder="Enter email">
+												<div class="input-group-addon"><i class="fa fa-envelope-o"></i></div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label>Password</label>
+											<div class="input-group">
+												<input type="password" class="form-control exampleInputpwd1" placeholder="Enter pwd">
+												<div class="input-group-addon"><i class="fa fa-lock"></i></div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label>Confirm Password</label>
+											<div class="input-group">
+												<input type="password" class="form-control exampleInputpwd2" placeholder="Confirm pwd">
+												<div class="input-group-addon"><i class="fa fa-lock"></i></div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="checkbox ">
+												<input type="checkbox">
+												<label>Remember me</label>
+											</div>
+										</div>
+										<div class="text-right">
+											<button type="submit" class="btn btn-success">Submit</button>
+											<button type="submit" class="btn btn-danger">Cancel</button>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- #row -->
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel panel-defaut">
+							<div class="panel-heading">
+								<h3 class="panel-title">Person Info</h3>
+							</div>
+							<div class="panel-body">
+								<form action="#">
+									<div class="form-body">
+										<div class="row">
+											<div class="col-md-6">
+												<div class="form-group">
+													<label class="control-label">First Name</label>
+													<input type="text" class="form-control" placeholder="John doe">
+												</div>
+											</div>
+											<div class="col-md-6">
+												<div class="form-group ">
+													<label class="control-label">Last Name</label>
+													<input type="text" class="form-control" placeholder="Last Name">
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="control-label">Gender</label>
+												<select class="form-control">
+													<option value="">Male</option>
+													<option value="">Female</option>
+												</select>
+												<span class="help-block"> Select your gender </span>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="control-label">Date of Birth</label>
+												<input type="text" class="form-control" placeholder="dd/mm/yyyy">
+											</div>
+										</div>
+									</div>
+									<!--/row-->
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="control-label">Category</label>
+												<select class="form-control" data-placeholder="Choose a Category" tabindex="1">
+													<option value="Category 1">Category 1</option>
+													<option value="Category 2">Category 2</option>
+													<option value="Category 3">Category 5</option>
+													<option value="Category 4">Category 4</option>
+												</select>
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label class="control-label ">Membership</label>
+												<div>
+													<div class="radio ">
+														<div class="block">
+															<label>
+																<input type="radio" name="optionsRadios" id="Radios1" value="option1"> Free
+															</label>
+															<label>
+																<input type="radio" name="optionsRadios" id="Radios2" value="option2"> Professional
+															</label>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-12 ">
+											<div class="form-group">
+												<label>Street</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+									</div>
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>City</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>State</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+									</div>
+									<!--/row-->
+									<div class="row">
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Post Code</label>
+												<input type="text" class="form-control">
+											</div>
+										</div>
+										<div class="col-md-6">
+											<div class="form-group">
+												<label>Country</label>
+												<select class="form-control">
+													<option value="AFG">Afghanistan</option>
+													<option value="ALA">Åland Islands</option>
+													<option value="ALB">Albania</option>
+													<option value="DZA">Algeria</option>
+													<option value="ASM">American Samoa</option>
+													<option value="AND">Andorra</option>
+													<option value="AGO">Angola</option>
+													<option value="AIA">Anguilla</option>
+													<option value="ATA">Antarctica</option>
+													<option value="ATG">Antigua and Barbuda</option>
+													<option value="ARG">Argentina</option>
+													<option value="ARM">Armenia</option>
+													<option value="ABW">Aruba</option>
+													<option value="AUS">Australia</option>
+													<option value="AUT">Austria</option>
+													<option value="AZE">Azerbaijan</option>
+													<option value="BHS">Bahamas</option>
+													<option value="BHR">Bahrain</option>
+													<option value="BGD">Bangladesh</option>
+													<option value="BRB">Barbados</option>
+													<option value="BLR">Belarus</option>
+													<option value="BEL">Belgium</option>
+													<option value="BLZ">Belize</option>
+													<option value="BEN">Benin</option>
+													<option value="BMU">Bermuda</option>
+													<option value="BTN">Bhutan</option>
+													<option value="BOL">Bolivia, Plurinational State of</option>
+													<option value="BES">Bonaire, Sint Eustatius and Saba</option>
+													<option value="BIH">Bosnia and Herzegovina</option>
+													<option value="BWA">Botswana</option>
+													<option value="BVT">Bouvet Island</option>
+													<option value="BRA">Brazil</option>
+													<option value="IOT">British Indian Ocean Territory</option>
+													<option value="BRN">Brunei Darussalam</option>
+													<option value="BGR">Bulgaria</option>
+													<option value="BFA">Burkina Faso</option>
+													<option value="BDI">Burundi</option>
+													<option value="KHM">Cambodia</option>
+													<option value="CMR">Cameroon</option>
+													<option value="CAN">Canada</option>
+													<option value="CPV">Cape Verde</option>
+													<option value="CYM">Cayman Islands</option>
+													<option value="CAF">Central African Republic</option>
+													<option value="TCD">Chad</option>
+													<option value="CHL">Chile</option>
+													<option value="CHN">China</option>
+													<option value="CXR">Christmas Island</option>
+													<option value="CCK">Cocos (Keeling) Islands</option>
+													<option value="COL">Colombia</option>
+													<option value="COM">Comoros</option>
+													<option value="COG">Congo</option>
+													<option value="COD">Congo, the Democratic Republic of the</option>
+													<option value="COK">Cook Islands</option>
+													<option value="CRI">Costa Rica</option>
+													<option value="CIV">Côte d'Ivoire</option>
+													<option value="HRV">Croatia</option>
+													<option value="CUB">Cuba</option>
+													<option value="CUW">Curaçao</option>
+													<option value="CYP">Cyprus</option>
+													<option value="CZE">Czech Republic</option>
+													<option value="DNK">Denmark</option>
+													<option value="DJI">Djibouti</option>
+													<option value="DMA">Dominica</option>
+													<option value="DOM">Dominican Republic</option>
+													<option value="ECU">Ecuador</option>
+													<option value="EGY">Egypt</option>
+													<option value="SLV">El Salvador</option>
+													<option value="GNQ">Equatorial Guinea</option>
+													<option value="ERI">Eritrea</option>
+													<option value="EST">Estonia</option>
+													<option value="ETH">Ethiopia</option>
+													<option value="FLK">Falkland Islands (Malvinas)</option>
+													<option value="FRO">Faroe Islands</option>
+													<option value="FJI">Fiji</option>
+													<option value="FIN">Finland</option>
+													<option value="FRA">France</option>
+													<option value="GUF">French Guiana</option>
+													<option value="PYF">French Polynesia</option>
+													<option value="ATF">French Southern Territories</option>
+													<option value="GAB">Gabon</option>
+													<option value="GMB">Gambia</option>
+													<option value="GEO">Georgia</option>
+													<option value="DEU">Germany</option>
+													<option value="GHA">Ghana</option>
+													<option value="GIB">Gibraltar</option>
+													<option value="GRC">Greece</option>
+													<option value="GRL">Greenland</option>
+													<option value="GRD">Grenada</option>
+													<option value="GLP">Guadeloupe</option>
+													<option value="GUM">Guam</option>
+													<option value="GTM">Guatemala</option>
+													<option value="GGY">Guernsey</option>
+													<option value="GIN">Guinea</option>
+													<option value="GNB">Guinea-Bissau</option>
+													<option value="GUY">Guyana</option>
+													<option value="HTI">Haiti</option>
+													<option value="HMD">Heard Island and McDonald Islands</option>
+													<option value="VAT">Holy See (Vatican City State)</option>
+													<option value="HND">Honduras</option>
+													<option value="HKG">Hong Kong</option>
+													<option value="HUN">Hungary</option>
+													<option value="ISL">Iceland</option>
+													<option value="IND">India</option>
+													<option value="IDN">Indonesia</option>
+													<option value="IRN">Iran, Islamic Republic of</option>
+													<option value="IRQ">Iraq</option>
+													<option value="IRL">Ireland</option>
+													<option value="IMN">Isle of Man</option>
+													<option value="ISR">Israel</option>
+													<option value="ITA">Italy</option>
+													<option value="JAM">Jamaica</option>
+													<option value="JPN">Japan</option>
+													<option value="JEY">Jersey</option>
+													<option value="JOR">Jordan</option>
+													<option value="KAZ">Kazakhstan</option>
+													<option value="KEN">Kenya</option>
+													<option value="KIR">Kiribati</option>
+													<option value="PRK">Korea, Democratic People's Republic of</option>
+													<option value="KOR">Korea, Republic of</option>
+													<option value="KWT">Kuwait</option>
+													<option value="KGZ">Kyrgyzstan</option>
+													<option value="LAO">Lao People's Democratic Republic</option>
+													<option value="LVA">Latvia</option>
+													<option value="LBN">Lebanon</option>
+													<option value="LSO">Lesotho</option>
+													<option value="LBR">Liberia</option>
+													<option value="LBY">Libya</option>
+													<option value="LIE">Liechtenstein</option>
+													<option value="LTU">Lithuania</option>
+													<option value="LUX">Luxembourg</option>
+													<option value="MAC">Macao</option>
+													<option value="MKD">Macedonia, the former Yugoslav Republic of</option>
+													<option value="MDG">Madagascar</option>
+													<option value="MWI">Malawi</option>
+													<option value="MYS">Malaysia</option>
+													<option value="MDV">Maldives</option>
+													<option value="MLI">Mali</option>
+													<option value="MLT">Malta</option>
+													<option value="MHL">Marshall Islands</option>
+													<option value="MTQ">Martinique</option>
+													<option value="MRT">Mauritania</option>
+													<option value="MUS">Mauritius</option>
+													<option value="MYT">Mayotte</option>
+													<option value="MEX">Mexico</option>
+													<option value="FSM">Micronesia, Federated States of</option>
+													<option value="MDA">Moldova, Republic of</option>
+													<option value="MCO">Monaco</option>
+													<option value="MNG">Mongolia</option>
+													<option value="MNE">Montenegro</option>
+													<option value="MSR">Montserrat</option>
+													<option value="MAR">Morocco</option>
+													<option value="MOZ">Mozambique</option>
+													<option value="MMR">Myanmar</option>
+													<option value="NAM">Namibia</option>
+													<option value="NRU">Nauru</option>
+													<option value="NPL">Nepal</option>
+													<option value="NLD">Netherlands</option>
+													<option value="NCL">New Caledonia</option>
+													<option value="NZL">New Zealand</option>
+													<option value="NIC">Nicaragua</option>
+													<option value="NER">Niger</option>
+													<option value="NGA">Nigeria</option>
+													<option value="NIU">Niue</option>
+													<option value="NFK">Norfolk Island</option>
+													<option value="MNP">Northern Mariana Islands</option>
+													<option value="NOR">Norway</option>
+													<option value="OMN">Oman</option>
+													<option value="PAK">Pakistan</option>
+													<option value="PLW">Palau</option>
+													<option value="PSE">Palestinian Territory, Occupied</option>
+													<option value="PAN">Panama</option>
+													<option value="PNG">Papua New Guinea</option>
+													<option value="PRY">Paraguay</option>
+													<option value="PER">Peru</option>
+													<option value="PHL">Philippines</option>
+													<option value="PCN">Pitcairn</option>
+													<option value="POL">Poland</option>
+													<option value="PRT">Portugal</option>
+													<option value="PRI">Puerto Rico</option>
+													<option value="QAT">Qatar</option>
+													<option value="REU">Réunion</option>
+													<option value="ROU">Romania</option>
+													<option value="RUS">Russian Federation</option>
+													<option value="RWA">Rwanda</option>
+													<option value="BLM">Saint Barthélemy</option>
+													<option value="SHN">Saint Helena, Ascension and Tristan da Cunha</option>
+													<option value="KNA">Saint Kitts and Nevis</option>
+													<option value="LCA">Saint Lucia</option>
+													<option value="MAF">Saint Martin (French part)</option>
+													<option value="SPM">Saint Pierre and Miquelon</option>
+													<option value="VCT">Saint Vincent and the Grenadines</option>
+													<option value="WSM">Samoa</option>
+													<option value="SMR">San Marino</option>
+													<option value="STP">Sao Tome and Principe</option>
+													<option value="SAU">Saudi Arabia</option>
+													<option value="SEN">Senegal</option>
+													<option value="SRB">Serbia</option>
+													<option value="SYC">Seychelles</option>
+													<option value="SLE">Sierra Leone</option>
+													<option value="SGP">Singapore</option>
+													<option value="SXM">Sint Maarten (Dutch part)</option>
+													<option value="SVK">Slovakia</option>
+													<option value="SVN">Slovenia</option>
+													<option value="SLB">Solomon Islands</option>
+													<option value="SOM">Somalia</option>
+													<option value="ZAF">South Africa</option>
+													<option value="SGS">South Georgia and the South Sandwich Islands</option>
+													<option value="SSD">South Sudan</option>
+													<option value="ESP">Spain</option>
+													<option value="LKA">Sri Lanka</option>
+													<option value="SDN">Sudan</option>
+													<option value="SUR">Suriname</option>
+													<option value="SJM">Svalbard and Jan Mayen</option>
+													<option value="SWZ">Swaziland</option>
+													<option value="SWE">Sweden</option>
+													<option value="CHE">Switzerland</option>
+													<option value="SYR">Syrian Arab Republic</option>
+													<option value="TWN">Taiwan, Province of China</option>
+													<option value="TJK">Tajikistan</option>
+													<option value="TZA">Tanzania, United Republic of</option>
+													<option value="THA">Thailand</option>
+													<option value="TLS">Timor-Leste</option>
+													<option value="TGO">Togo</option>
+													<option value="TKL">Tokelau</option>
+													<option value="TON">Tonga</option>
+													<option value="TTO">Trinidad and Tobago</option>
+													<option value="TUN">Tunisia</option>
+													<option value="TUR">Turkey</option>
+													<option value="TKM">Turkmenistan</option>
+													<option value="TCA">Turks and Caicos Islands</option>
+													<option value="TUV">Tuvalu</option>
+													<option value="UGA">Uganda</option>
+													<option value="UKR">Ukraine</option>
+													<option value="ARE">United Arab Emirates</option>
+													<option value="GBR">United Kingdom</option>
+													<option value="USA">United States</option>
+													<option value="UMI">United States Minor Outlying Islands</option>
+													<option value="URY">Uruguay</option>
+													<option value="UZB">Uzbekistan</option>
+													<option value="VUT">Vanuatu</option>
+													<option value="VEN">Venezuela, Bolivarian Republic of</option>
+													<option value="VNM">Viet Nam</option>
+													<option value="VGB">Virgin Islands, British</option>
+													<option value="VIR">Virgin Islands, U.S.</option>
+													<option value="WLF">Wallis and Futuna</option>
+													<option value="ESH">Western Sahara</option>
+													<option value="YEM">Yemen</option>
+													<option value="ZMB">Zambia</option>
+													<option value="ZWE">Zimbabwe</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<div class="form-actions">
+										<button type="submit" class="btn btn-success"> <i class="fa fa-check"></i> Save</button>
+										<button type="button" class="btn btn-danger">Cancel</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- #row -->
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-default box">
+							<div class="panel-heading">
+								<h3 class="panel-title"> Simple form with validation<br/></h3>
+							</div>
+							<div id="collapse2" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<form class="form-horizontal" method="post">
+										<div class="form-group">
+											<label class="col-sm-2 control-label">Username</label>
+											<div class="col-sm-10">
+												<input type="text" placeholder="Username" required>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">Email</label>
+											<div class="col-sm-10">
+												<div class="input-group">
+													<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+													<input type="email" placeholder="Email" required>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<label class="col-sm-2 control-label">Password</label>
+											<div class="col-sm-10">
+												<div class="input-group">
+													<input type="password" placeholder="Password" required>
+													<span class="input-group-addon"><i class="fa fa-lock"></i></span>
+												</div>
+												<span class="help-block">Example block-level help text here.</span>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-sm-offset-2 col-sm-10">
+												<div class="tcb">
+													<div class="checkbox">
+														<input type="checkbox" checked />
+														<label> Check me out</label>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="col-xs-12 col-sm-offset-2">
+												<button type="submit" class="btn btn-primary"> <i class="fa fa-lock"></i> Sign In</button>
+												<button type="submit" class="btn">Cancel</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="panel panel-default panel-transparent default-grad-bg">
+							<div class="panel-heading">
+								<h3 class="panel-title"> Debit &amp; Credit Card Details<br/></h3>
+							</div>
+							<form>
+								<div class="panel-body">
+									<div class="debitcard">
+										<div class="row">
+											<div class="col-md-12">
+												<input type="text" placeholder="Card Holder Name" required>
+											</div>
+										</div>
+										<div class="clearfix">
+											<br />
+										</div>
+										<div class="row">
+											<div class="col-md-9 col-sm-8 col-xs-8">
+												<input type="text" class="card-number card" placeholder="XXXX XXXX XXXX XXXX - Card Number " required maxlength="16">
+											</div>
+											<div class="col-md-3 col-sm-4 col-xs-4">
+												<input type="password" class="cvv-number" placeholder="xxx -CVV2" maxlength="3">
+											</div>
+										</div>
+										<div class="clearfix">
+											<br />
+										</div>
+										<div class="row">
+											<div class="col-md-3 col-sm-12  col-xs-12">
+												<label class="expiry text-center">Expiry date</label>
+											</div>
+											<div class="col-md-5 col-sm-6 col-xs-6 selection">
+												<div class="dropdown">
+													<div class="input-group">
+														<input type="text" Class="form-control dropdown-input" placeholder="Month" disabled="">
+														<div class="input-group-btn">
+															<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+															<span class="caret"></span>
+															</button>
+															<ul class="dropdown-menu dropdown-select">
+																<li><a href="#January" class="btn btn-danger">January</a></li>
+																<li><a href="#February" class="btn btn-success">February  </a></li>
+																<li><a href="#March" class="btn btn-warning">March</a></li>
+																<li><a href="#April" class="btn btn-info">April</a></li>
+																<li><a href="#May" class="btn btn-primary">May</a></li>
+																<li><a href="#June" class="btn btn-inverse">June</a></li>
+																<li><a href="#July" class="btn btn-danger">July</a></li>
+																<li><a href="#August" class="btn btn-info">August</a></li>
+																<li><a href="#September" class="btn btn-success">September</a></li>
+																<li><a href="#October" class="btn btn-warning">October</a></li>
+																<li><a href="#November" class="btn btn-info">November</a></li>
+																<li><a href="#December" class="btn btn-inverse">December</a></li>
+															</ul>
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="col col-md-3 col-sm-5 col-xs-5">
+												<label class="input">
+													<input type="text" name="year" placeholder="Year" data-mask="2099">
+												</label>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="panel-footer">
+									<div class="row">
+										<div class="col-md-3 pull-left">
+											<input type="submit" class="btn btn-primary" title="Proceed">
+										</div>
+										<div class="col-md-3 pull-right">
+											<input type="reset" class="btn btn-danger">
+										</div>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<!-- #row -->
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-12">
+						<div class="panel panel-default box">
+							<div class="panel-heading">
+								<h3 class="panel-title"> Straight form<br></h3>
+							</div>
+							<div id="collapse5" class="panel-collapse collapse in">
+								<div class="panel-body">
+									<form class="form-inlines">
+										<div class="col-md-7">
+											<div class="form-group col-md-6">
+												<label class="sr-only">Email address</label>
+												<input type="email" placeholder="Enter email">
+											</div>
+											<div class="form-group col-md-6">
+												<label class="sr-only">Password</label>
+												<input type="password" placeholder="Password">
+											</div>
+										</div>
+										<div class="col-md-5">
+											<div class="checkbox">
+												<input type="checkbox" checked="">
+												<span>  Remeber me</span>
+												<button type="submit" class="btn btn-primary btn-line pull-right"> <i class="fa fa-lock"></i> Sign in</button>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- #row -->
+				<!-- row -->
+				<div class="row">
+					<div class="col-md-5">
+						<div class="panel panel-success box">
+							<div class="panel-heading">
+								<h3 class="panel-title"> Newsletter <br/><small>Subscribe to our weekly Newsletter and stay tuned</small></h3>
+							</div>
+							<div class="panel-body">
+								<div class="thumbnail center well well-small text-center">
+									<form method="post">
+										<div class="input-group">
+											<span class="input-group-addon"><span class="fa fa-envelope"></span>
+										</span>
+										<input type="email" class="form-control email" placeholder="Enter email" required="required">
+									</div>
+									<br />
+									<input type="submit" value="Subscribe Now!" class="btn btn-success" />
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-7">
+					<div class="modal-signin animated fadeInLeft">
+						<div class="modal-content">
+							<form>
+								<div class="modal-body">
+									<div class="row onload">
+										<div class="col-md-5 hidden-xs hidden-sm primary-bg adons">
+											<div class="adon-content">
+												<div class="icon">
+													<i class="fa fa-coffee"></i>
+												</div>
+												<h4>Be at Best of all Admins</h4>
+												<ol>
+													<li>
+														Get Lifetime Freee Updates
+													</li>
+													<li>
+														In case of Issue, the problem will be solved to instantaneously.
+													</li>
+													<li>
+														Use Admin dashboard for the required output.
+													</li>
+												</ol>
+											</div>
+										</div>
+										<div class="col-md-7">
+											<div class="panel panel-body animated fadeInLeft">
+												<div class="panel-heading">
+													<h3 class="panel-title">
+													<span class="first-tab active"><a href="#login">Log In</a></span>
+													<span class="second-tab"><a href="#signup">Sign Up</a></span>
+													</h3>
+												</div>
+												<div class="panel-body">
+													<br>
+													<div class="field">
+														<input id="userName" type="text" data-length="5,15" required="required" />
+														<label for="userName">User Name</label>
+													</div>
+													<div class="field">
+														<input id="password" type="password" required="required" />
+														<label for="password">Password</label>
+													</div>
+													<button type="submit" class="center btn btn-primary btn-block" data-dismiss="modal">
+													<i class="fa fa-lock"></i> Secure Login
+													</button>
+													<small>By Logging in you agree to our <a href="#terms" class="text-success"> T&amp;C </a> and <a href="#privacy" class="text-info">Privacy Policy</a>.</small>
+													<hr>
+													<small><a href="#forgot-pwd" class="text-success">Forgot Password?</a> <a href="#create-new" class="text-primary">Create a new password</a></small>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<!-- #Modal -->
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- #row -->
+		</div>
+		<!-- # page-content-wrapper -->
+	</div>
+	<!-- # Wrapper -->
+	<!-- GoogleApi jQuery -->
+	<script type="text/javascript" src="datas/assets/jquery-1.12.4/jquery-1.12.4.js"></script>
+	<!-- Bootstrap Core JavaScript -->
+	<script src="datas/bootstrap/js/bootstrap.min.js"></script>
+	<!-- Metis menu min.JS -->
+	<script type="text/javascript" src="datas/assets/metisMenu-master/dist/metisMenu.min.js"></script>
+	<!-- Slim Scroll -->
+	<script type="text/javascript" src="datas/assets/jQuery-slimScroll-1.3.8/jquery.slimscroll.js"></script>
+	<!-- App JS  -->
+	<script type="text/javascript" src="datas/js/app.js"></script>
+	<!-- Page Level JS -->
+	<!-- Input Mask JS -->
+	<script type="text/javascript" src="datas/assets/masked-input/jquery.maskedinput.js"></script>
+	<!-- Validationform JS -->
+	<script type="text/javascript" src="datas/js/validationform.js"></script>
+	<!-- Forms JS -->
+	<script type="text/javascript" src="datas/js/forms.js"></script>
+</body>
+
+<!-- Mirrored from cskadmin.com/v3.2/forms-ui.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 13:39:00 GMT -->
+</html>

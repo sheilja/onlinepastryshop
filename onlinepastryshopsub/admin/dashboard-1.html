@@ -1,0 +1,3161 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from cskadmin.com/v3.2/dashboard-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 13:38:04 GMT -->
+<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<title>CSK - Admin Template | Zeasts
+		</title>
+		<!-- Icon -->
+		<link rel="icon" href="datas/images/icon.ico">
+		<!-- Text Editor CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/assets/simple-wysiwyg-editor/css/style.css">
+		<!-- Bootstrap Core CSS -->
+		<link href="datas/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<!-- MetisMenu CSS -->
+		<!-- lineicons-gh-pages -->
+		<link rel="stylesheet" type="text/css" href="datas/assets/lineicons-gh-pages/styles.css">
+		<!-- Animate CSS -->
+		<link rel="stylesheet" href="datas/assets/animate.css-master/animate.min.css">
+		<!-- Sparkline CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/assets/chartist-js-develop/dist/chartist.min.css">
+		<!-- Chartist Tool Tip CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/assets/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.css">
+		<!-- Sweet APP CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/min/csk.min.css">
+		<!-- MediaQuery CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/css/media-query.css">
+		<!-- Dashboard 1 CSS -->
+		<link rel="stylesheet" type="text/css" href="datas/css/dashboard1.css">
+		<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+		<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+		<!-- Fixed navbar -->
+		<nav class="navbar navbar-fixed-top notification navbar-default">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a href="index.html" class="navbar-brand">
+						
+						<span class="csk-brand">
+							<img src="datas/images/icon.png" class="img-responsive" alt="csk-brand icon" >
+						</span>
+					</a>
+				</div>
+				<a href="#menu-toggle" class="" id="menu-toggle">
+					<i class="fa fa-bars" aria-hidden="true">
+					</i>
+				</a>
+				<ul class="settingsmenu">
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="fa fa-cog pull-right"></span></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Account Settings <span class="glyphicon glyphicon-cog pull-right"></span></a></li>
+							<li class="divider"></li>
+							<li><a href="#">User stats <span class="glyphicon glyphicon-stats pull-right"></span></a></li>
+							<li class="divider"></li>
+							<li><a href="#">Messages <span class="badge pull-right"> 42 </span></a></li>
+							<li class="divider"></li>
+							<li><a href="#">Favourites Snippets <span class="glyphicon glyphicon-heart pull-right"></span></a></li>
+							<li class="divider"></li>
+							<li><a href="#">Sign Out <span class="glyphicon glyphicon-log-out pull-right"></span></a></li>
+						</ul>
+					</li>
+				</ul>
+				<!-- Navbar Right Menu -->
+				<div class="navbar-custom-menu">
+					<ul class="nav navbar-nav">
+						<li class="dropdown messages-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-envelope-o">
+								</i>
+								<div class="notify">
+									<span class="ring">
+									</span>
+									<span class="ring-point">
+									</span>
+								</div>
+							</a>
+							<div class="dropdown-menu">
+								<ul class="nav nav-tabs" id="myTab">
+									<li class="active">
+										<a data-target="#Inbox" data-toggle="tab">
+											<i class="icon icon-li-drawer">
+											</i>
+										</a>
+									</li>
+									<li>
+										<a data-target="#Sent" data-toggle="tab">
+											<i class="icon icon-li-paper-plane">
+											</i>
+										</a>
+									</li>
+									<li>
+										<a data-target="#Archive" data-toggle="tab">
+											<i class="icon icon-li-trash">
+											</i>
+										</a>
+									</li>
+									<li class="icon">
+										<a href="#">
+											<i class="icon icon-li-magnifier">
+											</i>
+										</a>
+									</li>
+									<li class="icon">
+										<a href="#">
+											<i class="icon icon-li-plus">
+											</i>
+										</a>
+									</li>
+								</ul>
+								<div class="tab-content" id="message">
+									<div class="tab-pane active" id="Inbox">
+										<ul class="message-body">
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Zeasts
+														</h4>
+														<small>Lorem ipsum dolor sit
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> Just now
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Jonathan
+														</h4>
+														<small>The European languages
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 1 min
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Agnes
+														</h4>
+														<small>Aenean vulputate eleifend
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 3 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Marvel
+														</h4>
+														<small>One morning, when Gregor
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 6 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Joseph
+														</h4>
+														<small>The new common language
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 1 day ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Frank
+														</h4>
+														<small>Nullam dictum felis eu
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 2 days ago
+													</small>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane" id="Sent">
+										<ul class="message-body">
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Theresa
+														</h4>
+														<small>Integer tincidunt. Cras
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> Just now
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Jettie
+														</h4>
+														<small>Sed ut perspiciatis
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 5 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Ronald
+														</h4>
+														<small>tellus eget condimentum
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 10 mins ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Amy
+														</h4>
+														<small>Nemo enim ipsam voluptatem
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 1 day ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Bryce
+														</h4>
+														<small>nisi ut aliquid ex ea
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 2 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Brenda
+														</h4>
+														<small>At vero eos et accusamus
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 3 days ago
+													</small>
+												</a>
+											</li>
+										</ul>
+									</div>
+									<div class="tab-pane" id="Archive">
+										<ul class="message-body">
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Laura
+														</h4>
+														<small>blandit vel, luctus
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 5 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Elizabeth
+														</h4>
+														<small>Nullam quis ante.
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 10 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Mack
+														</h4>
+														<small>Nam libero tempore,
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 14 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Jonathan
+														</h4>
+														<small>Far far away,
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 20 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Joseph
+														</h4>
+														<small>The new common language
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 21 days ago
+													</small>
+												</a>
+											</li>
+											<li class="messages">
+												<a href="#messages">
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive  messages-img" alt="captain-avatar">
+													<div>
+														<h4>Frank
+														</h4>
+														<small>Nullam dictum felis eu
+														</small>
+													</div>
+													<small class="time">
+													<i class="icon icon-li-clock">
+													</i> 25 days ago
+													</small>
+												</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="footer">
+									<a href="#Viewall">View all Messages
+									</a>
+								</div>
+							</div>
+						</li>
+						<!-- # messages-menu -->
+						<!-- Notifications Menu -->
+						<li class="dropdown notifications-menu">
+							<!-- Menu toggle button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-bell-o">
+								</i>
+								<div class="notify">
+									<span class="ring">
+									</span>
+									<span class="ring-point">
+									</span>
+								</div>
+							</a>
+							<ul class="dropdown-menu notification-dropdown">
+								<li class="header">You have 7 notifications
+								</li>
+								<li class="notification-body">
+									<!-- Inner Menu: contains the notifications -->
+									<ul class="notification">
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-user-plus">
+												</i> 5 new members joined today
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-warning">
+												</i> Something wrong going on
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-shopping-cart">
+												</i> 5 new products added
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-usd">
+												</i> Price change your product
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-archive">
+												</i> 3 orders not yet dispatched
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-cubes">
+												</i> 3 orders not yet dispatched
+											</a>
+										</li>
+										<li>
+											<!-- start notification -->
+											<a href="#" class="">
+												<i class="fa fa-user-secret">
+												</i> 5 new vendors registered
+											</a>
+										</li>
+										<!-- end notification -->
+									</ul>
+								</li>
+								<div class="footer">
+									<a href="#">View all
+									</a>
+								</div>
+							</ul>
+						</li>
+						<!-- User Account Menu -->
+						<li class="dropdown user user-menu">
+							<!-- Menu Toggle Button -->
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
+								<!-- The user image in the navbar-->
+								<img src="datas/images/avatars/captain-avatar.png" class="user-image" alt="User Image">
+								<!-- hidden-xs hides the username on small devices so only the image appears. -->
+							</a>
+							<ul class="dropdown-menu">
+								<!-- The user image in the menu -->
+								<li class="user-header">
+									<img src="datas/images/avatars/captain-avatar.png" class="user-image" alt="User Image">
+									<p>
+										Zeasts
+										<small>Template Admin
+										</small>
+									</p>
+								</li>
+								<!-- Menu Body -->
+								<li>
+									<a href="#account">
+										<i class="icon icon-li-female-user sIcon">
+										</i> Account Settings
+									</a>
+								</li>
+								<li>
+									<a href="#account">
+										<i class="icon icon-li-fire sIcon">
+										</i> Balance
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<i class="icon icon-li-config sIcon">
+										</i> Sellers Info.
+									</a>
+								</li>
+								<!-- Menu Footer-->
+								<li class="user-footer">
+									<div class="pull-left">
+										<a href="profile.html" class="btn btn-info">Profile
+										</a>
+									</div>
+									<div class="pull-right">
+										<a href="sign-in.html" class="btn btn-danger">Sign out
+										</a>
+									</div>
+								</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!-- # navbar-custom-menu -->
+			</div>
+			<!-- # container-fluid -->
+		</nav>
+		<!-- Main Body content starts here -->
+		<div id="wrapper">
+			<!-- Sidebar -->
+			<div id="sidebar-wrapper">
+				<aside class="sidebar">
+					<nav class="sidebar-nav" id="sidebarscroll">
+						<ul class="metismenu ripple" id="menu">
+							<li class="notify active">
+								<a href="#" aria-expanded="false">
+									<span class="ring"></span>
+									<span class="sidebar-nav-item-icon icon-li-speedometer fa-lg notify"></span>
+									<span class="sidebar-nav-item aText">Dashboard</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li class="active">
+										<a href="dashboard-1.html">
+											<span class="sidebar-nav-item-icon ion-ios-speedometer fa-fw"></span>
+											<span class="aText">Dashboard.1</span>
+										</a>
+									</li>
+									<li>
+										<a href="project-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-desktop fa-fw">
+											</span>
+											<span class="aText">Dashboard.2
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="dashboard-3.html">
+											<span class="sidebar-nav-item-icon fa fa-laptop fa-fw">
+											</span>
+											<span class="aText">Dashboard.3
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="invoice-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-mobile fa-fw">
+											</span>
+											<span class="aText">Dashboard.4
+											</span>
+											<i class="fa fa-star text-danger"></i>
+										</a>
+									</li> 
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon fa fa-folder-open-o fa-lg">
+									</span>
+									<span class="sidebar-nav-item aText">Projects
+									</span>
+									<span class="fa arrow fa-fw">
+									</span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="project-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-desktop fa-fw">
+											</span>
+											<span class="aText">Dashboard
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="project-list.html">
+											<span class="sidebar-nav-item-icon fa fa-list fa-fw">
+											</span>
+											<span class="aText"> Project list
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="project-detail.html">
+											<span class="sidebar-nav-item-icon fa fa-eye fa-fw">
+											</span>
+											<span class="aText">Project View
+											</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon fa fa-newspaper-o fa-lg">
+									</span>
+									<span class="sidebar-nav-item aText">Invoice
+									</span>
+									<i class="badge badge-success">New</i>
+									<span class="fa arrow fa-fw">
+									</span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="invoice-dashboard.html">
+											<span class="sidebar-nav-item-icon fa fa-mobile fa-fw">
+											</span>
+											<span class="aText">Dashboard
+											</span>
+											<i class="fa fa-star text-warning"></i>
+										</a>
+									</li>
+									<li>
+										<a href="invoice-list.html">
+											<span class="sidebar-nav-item-icon fa fa-list-alt fa-fw">
+											</span>
+											<span class="aText"> Invoice list
+											</span>
+											<i class="fa fa-star text-warning"></i>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-bar-chart fa-lg"></span>
+									<span class="sidebar-nav-item aText">Charts</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse" style="height: 0px;">
+									<li>
+										<a href="sparkline-chart.html">
+											<span class="sidebar-nav-item-icon ion-connection-bars fa-fw"></span>
+											<span class="aText">Sparkline Chart</span>
+										</a>
+									</li>
+									<li>
+										<a href="bar-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-bar-chart fa-fw"></span>
+											<span class="aText">Bar Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="pie-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-pie-chart fa-fw"></span>
+											<span class="aText">Pie Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="line-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-line-chart fa-fw"></span>
+											<span class="aText">Line Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="area-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-area-chart fa-fw"></span>
+											<span class="aText">Area Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="bubble-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-circle fa-fw"></span>
+											<span class="aText">Bubble Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="3d-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-cubes fa-fw"></span>
+											<span class="aText">3D Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="combination-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-bar-chart fa-fw"></span>
+											<span class="aText">Combination Charts</span>
+										</a>
+									</li>
+									<li>
+										<a href="dynamic-charts.html">
+											<span class="sidebar-nav-item-icon fa fa-line-chart fa-fw"></span>
+											<span class="aText">Dynamic Charts</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-globe-1 fa-lg"></span>
+									<span class="sidebar-nav-item aText">Maps</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="maps.html">
+											<span class="sidebar-nav-item-icon fa fa-map-marker fa-fw"></span>
+											<span class="aText">Vector Map</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon icon-li-opened-book fa-lg"></span>
+									<span class="sidebar-nav-item aText">Forms</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="forms-ui.html">
+											<span class="sidebar-nav-item-icon ion-ios-paper fa-fw"></span>
+											<span class="aText"> Forms Ui</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-wizard.html">
+											<span class="sidebar-nav-item-icon ion-ios-list fa-fw"></span>
+											<span class="aText"> Form Wizard</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-validations.html">
+											<span class="sidebar-nav-item-icon fa fa-file fa-fw"></span>
+											<span class="aText"> Form Validations</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-elements.html">
+											<span class="sidebar-nav-item-icon ion-ios-lightbulb fa-fw"></span>
+											<span class="aText">Form Elements</span>
+										</a>
+									</li>
+									<li>
+										<a href="form-picker.html">
+											<span class="sidebar-nav-item-icon fa fa-pencil fa-fw"></span>
+											<span class="aText">Form pickers</span>
+										</a>
+									</li>
+									<li>
+										<a href="editor.html">
+											<span class="sidebar-nav-item-icon fa fa-pencil fa-fw"></span>
+											<span class="aText">Editor</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-tablet fa-lg"></span>
+									<span class="sidebar-nav-item aText">Tables</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="advanced-tables.html">
+											<span class="sidebar-nav-item-icon fa fa-database fa-fw"></span>
+											<span class="aText">Advanced Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="basic-tables.html">
+											<span class="sidebar-nav-item-icon ion-ios-paper fa-fw"></span>
+											<span class="aText">Basic Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="data-tables.html">
+											<span class="sidebar-nav-item-icon fa fa-database fa-fw"></span>
+											<span class="aText">Data Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="responsive-table.html">
+											<span class="sidebar-nav-item-icon fa fa-clipboard fa-fw"></span>
+											<span class="aText">Responsive Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="editable-tables.html">
+											<span class="sidebar-nav-item-icon fa fa-pencil fa-fw"></span>
+											<span class="aText">Editable Tables</span>
+										</a>
+									</li>
+									<li>
+										<a href="dynamic-table.html">
+											<span class="sidebar-nav-item-icon fa fa-file-archive-o fa-fw"></span>
+											<span class="aText">Dynamic-table</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="notify">
+								<a href="#" aria-expanded="false">
+									<span class="ring"></span>
+									<span class="sidebar-nav-item-icon icon-li-envelope-letter fa-lg"></span>
+									<span class="sidebar-nav-item aText">Mail Box</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="mailbox1.html">
+											<span class="sidebar-nav-item-icon fa fa-inbox fa-fw"></span>
+											<span class="aText">Inbox 1</span>
+										</a>
+									</li>
+									<li>
+										<a href="mailbox2.html">
+											<span class="sidebar-nav-item-icon fa fa-inbox fa-fw"></span>
+											<span class="aText">Inbox 2</span>
+										</a>
+									</li>
+									<li>
+										<a href="view-mail.html">
+											<span class="sidebar-nav-item-icon fa fa-envelope-o fa-fw"></span>
+											<span class="aText">View Mail</span>
+										</a>
+									</li>
+									<li>
+										<a href="compose.html">
+											<span class="sidebar-nav-item-icon ion-ios-list-outline fa-fw"></span>
+											<span class="aText">Compose</span>
+										</a>
+									</li>
+									<li>
+										<a href="email-template.html">
+											<span class="sidebar-nav-item-icon fa fa-envelope-square fa-fw"></span>
+											<span class="aText">Email Template</span>
+											<i class="fa fa-star text-danger"></i>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="calendar.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-calendar fa-lg"></span>
+									<span class="sidebar-nav-item aText">Calender</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-diamond fa-lg"></span>
+									<span class="sidebar-nav-item aText">UI Elements</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="alerts.html">
+											<span class="sidebar-nav-item-icon fa fa-bell-o fa-fw"></span>
+											<span class="aText">Alerts</span>
+										</a>
+									</li>
+									<li>
+										<a href="animate.html">
+											<span class="sidebar-nav-item-icon ion-ios-settings fa-fw"></span>
+											<span class="aText">Animations</span>
+										</a>
+									</li>
+									<li>
+										<a href="buttons.html">
+											<span class="sidebar-nav-item-icon ion-ios-toggle fa-fw"></span>
+											<span class="aText">Buttons</span>
+										</a>
+									</li>
+									<li>
+										<a href="button-select.html">
+											<span class="sidebar-nav-item-icon fa fa-check-square-o fa-fw"></span>
+											<span class="aText">Button-select</span>
+										</a>
+									</li>
+									<li>
+										<a href="dragit.html">
+											<span class="sidebar-nav-item-icon fa fa-arrows fa-fw"></span>
+											<span class="aText">Draggable panels</span>
+										</a>
+									</li>
+									<li>
+										<a href="progress-bar.html">
+											<span class="sidebar-nav-item-icon fa fa-tags fa-fw"></span>
+											<span class="aText">Progress Bar</span>
+										</a>
+									</li>
+									<li>
+										<a href="grid.html">
+											<span class="sidebar-nav-item-icon fa fa-th fa-fw"></span>
+											<span class="aText">Grid</span>
+										</a>
+									</li>
+									<li>
+										<a href="icons.html">
+											<span class="sidebar-nav-item-icon fa fa-flag-o fa-fw"></span>
+											<span class="aText">Icons</span>
+										</a>
+									</li>
+									<li>
+										<a href="panels.html">
+											<span class="sidebar-nav-item-icon ion-android-notifications-off fa-fw"></span>
+											<span class="aText">Panels And Wells</span>
+										</a>
+									</li>
+									<li>
+										<a href="sweet-alert.html">
+											<span class="sidebar-nav-item-icon ion-ios-timer-outline fa-fw"></span>
+											<span class="aText">Sweet Alerts</span>
+										</a>
+									</li>
+									<li>
+										<a href="modal.html">
+											<span class="sidebar-nav-item-icon fa fa-building-o fa-fw"></span>
+											<span class="aText">Modals</span>
+										</a>
+									</li>
+									<li>
+										<a href="carousel.html">
+											<span class="sidebar-nav-item-icon fa fa-code-fork fa-fw"></span>
+											<span class="aText">Carousel</span>
+										</a>
+									</li>
+									<li>
+										<a href="nestables.html">
+											<span class="sidebar-nav-item-icon fa fa-table fa-fw"></span>
+											<span class="aText">Nestables</span>
+										</a>
+									</li>
+									<li>
+										<a href="range-slider.html">
+											<span class="sidebar-nav-item-icon fa fa-sliders fa-fw">
+											</span>
+											<span class="aText">Range Sliders
+											</span>
+										</a>
+									</li>
+									<li>
+										<a href="tooltips.html">
+											<span class="sidebar-nav-item-icon fa fa-book fa-fw"></span>
+											<span class="aText">Tooltips UI</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li class="notify">
+								<a href="#" aria-expanded="false">
+									<span class="ring"></span>
+									<span class="sidebar-nav-item-icon icon-li-documents fa-lg"></span>
+									<span class="sidebar-nav-item aText">Pages</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="empty.html">
+											<span class="sidebar-nav-item-icon ion-ios-paper fa-fw"></span>
+											<span class="aText">Blank Page</span>
+										</a>
+									</li>
+									<li>
+										<a href="blog-index.html">
+											<span class="sidebar-nav-item-icon fa fa-wpforms fa-fw"></span>
+											<span class="aText">Blog</span>
+											<i class="fa fa-star text-danger"></i>
+										</a>
+									</li>
+									<li>
+										<a href="forgot.html">
+											<span class="sidebar-nav-item-icon fa fa-key fa-fw"></span>
+											<span class="aText">Forgot</span>
+										</a>
+									</li>
+									<li>
+										<a href="invoice.html">
+											<span class="sidebar-nav-item-icon fa fa-envelope fa-fw"></span>
+											<span class="aText">Invoice</span>
+										</a>
+									</li>
+									<li>
+										<a href="profile.html">
+											<span class="sidebar-nav-item-icon fa fa-user fa-fw"></span>
+											<span class="aText">profile</span>
+										</a>
+									</li>
+									<li>
+										<a href="sign-in.html">
+											<span class="sidebar-nav-item-icon fa fa-sign-in fa-fw"></span>
+											<span class="aText">Sign in</span>
+										</a>
+									</li>
+									<li>
+										<a href="sign-up.html">
+											<span class="sidebar-nav-item-icon fa fa-user-plus fa-fw"></span>
+											<span class="aText">Sign up</span>
+										</a>
+									</li>
+									<li>
+										<a href="lock.html">
+											<span class="sidebar-nav-item-icon fa fa-lock fa-fw"></span>
+											<span class="aText">Lock Screen</span>
+										</a>
+									</li>
+									<li>
+										<a href="400.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 400</span>
+										</a>
+									</li>
+									<li>
+										<a href="403.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 403</span>
+										</a>
+									</li>
+									<li>
+										<a href="404.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 404</span>
+										</a>
+									</li>
+									<li>
+										<a href="500.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 500</span>
+										</a>
+									</li>
+									<li>
+										<a href="503.html">
+											<span class="sidebar-nav-item-icon fa fa-exclamation-triangle fa-fw"></span>
+											<span class="aText">Error 503</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon fa fa-spinner fa-lg"></span>
+									<span class="sidebar-nav-item aText">On Load</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="onload-sign-in.html">
+											<span class="sidebar-nav-item-icon fa fa-sign-in fa-fw"></span>
+											<span class="aText">On Load Sign-in</span>
+										</a>
+									</li>
+									<li>
+										<a href="onload-subscribe.html">
+											<span class="sidebar-nav-item-icon fa fa-sign-in fa-fw"></span>
+											<span class="aText">On Load Subscribe</span>
+										</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="todo.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-list fa-lg"></span>
+									<span class="sidebar-nav-item aText">To Do</span>
+								</a>
+							</li>
+							<li>
+								<a href="dabba.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-layers fa-lg"></span>
+									<span class="sidebar-nav-item aText">Dabba</span>
+								</a>
+							</li>
+							<li>
+								<a href="#" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-present fa-lg"></span>
+									<span class="sidebar-nav-item aText">Multi-Dropdown</span>
+									<span class="fa arrow fa-fw"></span>
+								</a>
+								<ul aria-expanded="false" class="collapse">
+									<li>
+										<a href="#" aria-expanded="false">
+											<span class="sidebar-nav-item-icon icon-li-right fa-lg"></span>
+											<span class="sidebar-nav-item aText">Dropdown.1</span>
+											<span class="fa arrow fa-fw"></span>
+										</a>
+										<ul aria-expanded="false" class="collapse">
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">First</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">Second</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+									<li>
+										<a href="#" aria-expanded="false">
+											<span class="sidebar-nav-item-icon icon-li-right fa-lg"></span>
+											<span class="sidebar-nav-item aText">Dropdown.2</span>
+											<span class="fa arrow fa-fw"></span>
+										</a>
+										<ul aria-expanded="false" class="collapse">
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">First</span>
+												</a>
+											</li>
+											<li>
+												<a href="#">
+													<span class="sidebar-nav-item-icon icon-li-arrow-right fa-fw"></span>
+													<span class="aText">Second</span>
+												</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<a href="documentation.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-document fa-lg"></span>
+									<span class="sidebar-nav-item aText">Documentation</span>
+								</a>
+							</li>
+							<li>
+								<a href="faq.html" aria-expanded="false">
+									<span class="sidebar-nav-item-icon icon-li-question fa-lg"></span>
+									<span class="sidebar-nav-item aText">FAQ</span>
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</aside>
+			</div>
+			<!-- # Sidebar-wrapper -->
+			<!-- Page Content -->
+			<div class="container-fluid salesChart-bg">
+				<div class="stack-value" style="width:100%;margin: 0 auto">
+				</div>
+			</div>
+			<div id="page-content-wrapper">
+				<div class="row cards">
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12 animated fadeInLeft">
+						<div class="card">
+							<div class="display-block">
+								<h5 class="value pull-left">
+								<span class="odometer" data-precision="0">852
+								</span>
+								</h5>
+								<small class="id-value">
+								<i class="fa fa-sort-up text-success">
+								</i>
+								<span class="odometer" data-precision="0">75
+								</span>
+								<span>+
+								</span>
+								</small>
+							</div>
+							<div class="clearfix">
+								<small class="title">Todays Overall Sales
+								</small>
+								<br>
+								<div class="last">Updated: <i class="fa fa-clock-o"></i> 1min ago
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
+						<div class="card">
+							<div class="display-block">
+								<h5 class="value pull-left">
+								<span class="odometer" data-precision="0">735
+								</span>
+								</h5>
+								<small class="id-value label label-warning">
+								<span class="odometer" data-precision="0">82
+								</span>
+								<span>
+									<sub> MB
+									</sub>
+								</span>
+								</small>
+							</div>
+							<div class="clearfix">
+								<small class="title">Memory usage of Site
+								</small>
+								<br>
+								<div class="last">Updated: <i class="fa fa-clock-o"></i> 3mins ago
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
+						<div class="card pie">
+							<div class="display-block">
+								<span class="title-orders pull-left">Orders Status
+								</span>
+							</div>
+							<div class="row table-pie">
+								<div class="col-xs-6">
+									<table class="table table-bordered">
+										<thead>
+											<tr class="success">
+												<td>
+													<span class="odometer" data-precision="0">100
+													</span>
+													<span>M
+													</span>
+												</td>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="danger">
+												<td>
+													<span class="odometer" data-precision="0">650
+													</span>
+													<span>K
+													</span>
+												</td>
+											</tr>
+											<tr class="info">
+												<td>
+													<span class="odometer" data-precision="0">350
+													</span>
+													<span>K
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+								<div class="col-xs-6">
+									<div class="order-status pull-right">
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-6 col-md-4 col-lg-3 col-xs-12">
+						<div class="card">
+							<div class="display-block">
+								<h5 class="value pull-left">
+								<span class="odometer" data-precision="0">357
+								</span>
+								<span>+
+								</span>
+								</h5>
+								<small class="id-value">
+								<i class="fa fa-sort-up text-success">
+								</i>
+								<span class="odometer" data-precision="0">21
+								</span>
+								<span>%
+								</span>
+								</small>
+							</div>
+							<div class="clearfix">
+								<small class="title">Products On Hold
+								</small>
+								<br>
+								<div class="last">Updated: <i class="fa fa-clock-o"></i> 24 Hrs. ago
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-8 col-md-8">
+						<div class="panel panel-default pale-panel-border-top panel-with-options">
+							<div class="panel-heading">
+								<h3 class="panel-title">
+								Monthly Sales
+								</h3>
+							</div>
+							<div class="panel-body">
+								<div class="monthly-sales" style="width:100%;margin: 0 auto">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4 visible-md visible-lg">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+								<div class="cards sales">
+									<div class="card new-update">
+										<h6 class="sales-title">Revenue Chart
+										</h6>
+										<div class="bar-sales">
+										</div>
+									</div>
+									<div class="card panel">
+										<div class="panel-body">
+											<div class="snowy">
+											</div>
+											<p class="text"> <i class="fa fa-map-marker">
+												</i>#NewYork - Rainy
+											</p>
+											<p class="degree">12
+												<sup>C
+												</sup>
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-5 animated fadeInLeft">
+						<div class="panel panel-success box panel-with-options">
+							<div class="panel-heading">
+								<h3 class="panel-title"> To Do List
+								<br>
+								<small>Simple add &amp; Delete
+								</small>
+								</h3>
+							</div>
+							<div class="panel-body">
+								<form class="list_of_items row">
+									<div class="todo_list showactions first_one">
+										<div class="col-md-8 col-sm-8 col-xs-8">
+											<div class="todo_text todoitem">Read the reviews.
+											</div>
+										</div>
+										<div class="col-md-4  col-sm-4 col-xs-4  pull-right show_btns">
+											<button class='btn btn-warning todo_edit'>
+											<span class='fa fa fa-edit'>
+											</span>
+											</button>
+											<button class='btn btn-danger todo_delete'>
+											<span class='glyphicon glyphicon-remove-circle'>
+											</span>
+											</button>
+										</div>
+									</div>
+									<div class="todo_list showactions first_one">
+										<div class="col-md-8 col-sm-8 col-xs-8">
+											<div class="todo_text todoitem">Notice the alarms.
+											</div>
+										</div>
+										<div class="col-md-4  col-sm-4 col-xs-4  pull-right show_btns">
+											<button class='btn btn-warning todo_edit'>
+											<span class='fa fa fa-edit'>
+											</span>
+											</button>
+											<button class='btn btn-danger todo_delete'>
+											<span class='glyphicon glyphicon-remove-circle'>
+											</span>
+											</button>
+										</div>
+									</div>
+									<div class="todo_list showactions first_one">
+										<div class="col-md-8 col-sm-8 col-xs-8">
+											<div class="todo_text todoitem">Find the topper one.
+											</div>
+										</div>
+										<div class="col-md-4  col-sm-4 col-xs-4  pull-right show_btns">
+											<button class='btn btn-warning todo_edit'>
+											<span class='fa fa fa-edit'>
+											</span>
+											</button>
+											<button class='btn btn-danger todo_delete'>
+											<span class='glyphicon glyphicon-remove-circle'>
+											</span>
+											</button>
+										</div>
+									</div>
+									<div class="todo_list showactions first_one">
+										<div class="col-md-8 col-sm-8 col-xs-8">
+											<div class="todo_text todoitem">Announce the winners.
+											</div>
+										</div>
+										<div class="col-md-4  col-sm-4 col-xs-4  pull-right show_btns">
+											<button class='btn btn-warning todo_edit'>
+											<span class='fa fa fa-edit'>
+											</span>
+											</button>
+											<button class='btn btn-danger todo_delete'>
+											<span class='glyphicon glyphicon-remove-circle'>
+											</span>
+											</button>
+										</div>
+									</div>
+									<div class="todo_list showactions first_one">
+										<div class="col-md-8 col-sm-8 col-xs-8">
+											<div class="todo_text todoitem">Check the balance.
+											</div>
+										</div>
+										<div class="col-md-4  col-sm-4 col-xs-4  pull-right show_btns">
+											<button class='btn btn-warning todo_edit'>
+											<span class='fa fa fa-edit'>
+											</span>
+											</button>
+											<button class='btn btn-danger todo_delete'>
+											<span class='glyphicon glyphicon-remove-circle'>
+											</span>
+											</button>
+										</div>
+									</div>
+									<div class="todo_list showactions first_one">
+										<div class="col-md-8 col-sm-8 col-xs-8">
+											<div class="todo_text todoitem">Accept the friends.
+											</div>
+										</div>
+										<div class="col-md-4  col-sm-4 col-xs-4  pull-right show_btns">
+											<button class='btn btn-warning todo_edit'>
+											<span class='fa fa fa-edit'>
+											</span>
+											</button>
+											<button class='btn btn-danger todo_delete'>
+											<span class='glyphicon glyphicon-remove-circle'>
+											</span>
+											</button>
+										</div>
+									</div>
+									<div class="todo_list showactions first_one">
+										<div class="col-md-8 col-sm-8 col-xs-8">
+											<div class="todo_text todoitem">Accept the friends.
+											</div>
+										</div>
+										<div class="col-md-4  col-sm-4 col-xs-4  pull-right show_btns">
+											<button class='btn btn-warning todo_edit'>
+											<span class='fa fa fa-edit'>
+											</span>
+											</button>
+											<button class='btn btn-danger todo_delete'>
+											<span class='glyphicon glyphicon-remove-circle'>
+											</span>
+											</button>
+										</div>
+									</div>
+									<div class="todo_list showactions first_one">
+										<div class="col-md-8 col-sm-8 col-xs-8">
+											<div class="todo_text todoitem">Accept the friends.
+											</div>
+										</div>
+										<div class="col-md-4  col-sm-4 col-xs-4  pull-right show_btns">
+											<button class='btn btn-warning todo_edit'>
+											<span class='fa fa fa-edit'>
+											</span>
+											</button>
+											<button class='btn btn-danger todo_delete'>
+											<span class='glyphicon glyphicon-remove-circle'>
+											</span>
+											</button>
+										</div>
+									</div>
+								</form>
+							</div>
+							<div class="panel-footer todo_list adds">
+								<form id="main_input_box" class="form-inline">
+									<div class="input-group btn-block">
+										<span class="input-group-btn">
+											<button class="btn btn-success btn-block">
+											<i class="fa fa-plus">
+											</i>
+											</button>
+										</span>
+										<label class="sr-only" for="custom_textbox">Add Task
+										</label>
+										<input id="custom_textbox" name="Item" type="text" required="" placeholder="Add list item here" class="form-control">
+										<span class="input-group-btn">
+											<button class="btn btn-success btn-block add_button" type="submit">Add Task
+											</button>
+										</span>
+									</div>
+									<!-- /input-group -->
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-7">
+						<div class="panel panel-default">
+							<div class="panel-heading">
+								<a href="#fullwidth" class="full-width">
+									<!-- <i class="fa fa-clone"></i> -->
+								</a>
+								<div class="row">
+									<div class="col-xs-6">
+										<h3 class="panel-title">Monthly Sales
+										</h3>
+									</div>
+									<div class="row visible-xs"><hr></div>
+									<div class="col-sm-4 text-right">
+										<div class="input-group">
+											<input type="text" Class="form-control dropdown-input" disabled="" placeholder="Select an Action">
+											<div class="input-group-btn">
+												<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+												<span class="caret">
+												</span>
+												</button>
+												<ul class="dropdown-menu dropdown-select">
+													<li>
+														<a href="#" class="btn btn-danger">Danger
+														</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-success">Success
+														</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-warning">Warning
+														</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-info">Info
+														</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-primary">Primary
+														</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-inverse">Primary
+														</a>
+													</li>
+													<li>
+														<a href="#" class="btn btn-default">Primary
+														</a>
+													</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-sm-2">
+										<button class="btn btn-block btn-success nm">
+										Apply
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="panel-body">
+								<div class="table-responsive comments-box">
+									<table class="table table-striped table-list">
+										<thead>
+											<tr>
+												<td>
+													<input type="checkbox" class="checkAll">
+												</td>
+												<td>User
+												</td>
+												<td>Comment/Feedback
+												</td>
+												<td>Status
+												</td>
+											</tr>
+										</thead>
+										<tbody class="myTable checkallinput">
+											<tr>
+												<td>
+													<input type="checkbox">
+												</td>
+												<td>
+													<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+												</td>
+												<td>
+													<h6 class="comment-name">Zeasts
+													<small>
+													<i class="fa fa-clock-o">
+													</i> 3 Hours ago
+													</small>
+													</h6>
+													<p>
+														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+													</p>
+												</td>
+												<td>
+													<label class="label label-info">Pending
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox">
+												</td>
+												<td>
+													<img src="datas/images/avatars/female-avatar.png" class="img-responsive" alt="avatar">
+												</td>
+												<td>
+													<h6 class="comment-name">Zeasts
+													<small>
+													<i class="fa fa-clock-o">
+													</i> 4 Hours ago
+													</small>
+													</h6>
+													<p>
+														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+													</p>
+												</td>
+												<td>
+													<label class="label label-primary">Awaited
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox">
+												</td>
+												<td>
+													<img src="datas/images/avatars/plumber-avatar.png" class="img-responsive " alt="avatar">
+												</td>
+												<td>
+													<h6 class="comment-name">Zeasts
+													<small>
+													<i class="fa fa-clock-o">
+													</i> 7 Hours ago
+													</small>
+													</h6>
+													<p>
+														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+													</p>
+												</td>
+												<td>
+													<label class="label label-danger">Deleted
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox">
+												</td>
+												<td>
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive" alt="avatar">
+												</td>
+												<td>
+													<h6 class="comment-name">Zeasts
+													<small>
+													<i class="fa fa-clock-o">
+													</i> 10 Hours ago
+													</small>
+													</h6>
+													<p>
+														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+													</p>
+												</td>
+												<td>
+													<label class="label label-success">Accepted
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox">
+												</td>
+												<td>
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive" alt="avatar">
+												</td>
+												<td>
+													<h6 class="comment-name">Zeasts
+													<small>
+													<i class="fa fa-clock-o">
+													</i> 13 Hours ago
+													</small>
+													</h6>
+													<p>
+														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+													</p>
+												</td>
+												<td>
+													<label class="label label-primary">Pending
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox">
+												</td>
+												<td>
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive" alt="avatar">
+												</td>
+												<td>
+													<h6 class="comment-name">Zeasts
+													<small>
+													<i class="fa fa-clock-o">
+													</i> 13 Hours ago
+													</small>
+													</h6>
+													<p>
+														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+													</p>
+												</td>
+												<td>
+													<label class="label label-success">Accepted
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox">
+												</td>
+												<td>
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive" alt="avatar">
+												</td>
+												<td>
+													<h6 class="comment-name">Zeasts
+													<small>
+													<i class="fa fa-clock-o">
+													</i> 24 Hours ago
+													</small>
+													</h6>
+													<p>
+														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+													</p>
+												</td>
+												<td>
+													<label class="label label-warning">On Hold
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox">
+												</td>
+												<td>
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive" alt="avatar">
+												</td>
+												<td>
+													<h6 class="comment-name">Zeasts
+													<small>
+													<i class="fa fa-clock-o">
+													</i> 1 Day ago
+													</small>
+													</h6>
+													<p>
+														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+													</p>
+												</td>
+												<td>
+													<label class="label label-danger">Deleted
+													</label>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<input type="checkbox">
+												</td>
+												<td>
+													<img src="datas/images/avatars/captain-avatar2.png" class="img-responsive" alt="avatar">
+												</td>
+												<td>
+													<h6 class="comment-name">Zeasts
+													<small>
+													<i class="fa fa-clock-o">
+													</i> 2 Days ago
+													</small>
+													</h6>
+													<p>
+														Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor
+													</p>
+												</td>
+												<td>
+													<label class="label label-info">Pending
+													</label>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+							<div class="panel-footer text-right">
+								<ul class="pagination pagination-lg pager" id="myPager">
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+				</div>
+				<div class="row">
+					<div class="col-lg-7 col-md-12">
+						<div class="panel panel-default profit-graphs">
+							<div class="panel-heading">
+								<h3 class="panel-title">Profit
+								</h3>
+								<a href="#FullWidth" class="full-width">
+								</a>
+							</div>
+							<div class="panel-body">
+								<small>Weekly
+								</small>
+								<span class="profit-weekly">
+								</span>
+								<small>Monthly
+								</small>
+								<span class="bar-chart">
+								</span>
+								<small>Per Annum
+								</small>
+								<span class="line-chart">
+								</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-12 col-lg-5">
+						<div class="panel statistics-box">
+							<div class="panel-heading">
+								<div class="row">
+									<div class="col-md-5 col-xs-5">
+										<h3 class="panel-title">Statistics
+										</h3>
+										<p>Last 30 Days
+										</p>
+									</div>
+									<div class="col-md-7 col-xs-7">
+										<div class="row">
+											<div class="col-md-5 col-xs-5">
+												<b class="text-danger">16303
+												</b>
+												<p>
+													<i class="fa fa-eye text-success">
+													</i> Views
+												</p>
+											</div>
+											<div class="col-md-7 col-xs-7">
+												<b class="text-primary">498
+												</b>
+												<p>
+													<i class="fa fa-hand-spock-o text-primary">
+													</i>Requests
+												</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-body">
+								<span id="composite2" style="width:100%;margin: 0 auto">
+								</span>
+							</div>
+							<div class="product-view pie">
+								<div class="row">
+									<div class="col-md-7 col-xs-6 icon-bg">
+										<i class="fa fa-eye icon text-danger">
+										</i>
+										<h3>Product Views
+										</h3>
+										<small>
+										<span class="chart-color success-bg">
+										</span> 50k Viewing
+										</small>
+										<br>
+										<small>
+										<i class="chart-color danger-bg">
+										</i> 40k Ordered
+										</small>
+										<br>
+										<small>
+										<i class="chart-color info-bg">
+										</i> 30k Calcelled
+										</small>
+									</div>
+									<div class="col-md-5 col-xs-6">
+										<div class="products-view">
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="">
+							<div class="small-chart info-bg">
+								<div class="row icon-bg">
+									<div class="col-md-3 col-xs-3">
+										<i class="fa fa-line-chart icon">
+										</i>
+										<small class="year"> Revenue
+										</small>
+										<h3 class="panel-title">Report
+										</h3>
+									</div>
+									<div class="col-md-9 col-xs-9">
+										<div class="info-bg year-report">
+										</div>
+										<br>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="clearfix visible-xs visible-sm visible-md">
+					<br>
+				</div>
+				<div class="row">
+					<div class="col-md-6 col-md-12">
+						<div class="dabba dabba-success">
+							<div class="dabba-heading">
+								<h3 class="dabba-title">Yesterday Sales with labels
+								</h3>
+							</div>
+							<div class="dabba-body">
+								<div class="table-responsive">
+									<table class="table table-strip">
+										<thead>
+											<tr>
+												<th>Product Name
+												</th>
+												<th>Stature
+												</th>
+												<th>Era
+												</th>
+												<th>Fare
+												</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr>
+												<td>Joseph
+												</td>
+												<td>
+													<span class="label label-primary">Primary
+													</span>
+												</td>
+												<td>June 18
+												</td>
+												<td>
+													<span class="text-Primary">$2400
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Marvel
+												</td>
+												<td>
+													<span class="label label-info">Info
+													</span>
+												</td>
+												<td>June 19
+												</td>
+												<td>
+													<span class="text-info">$150
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Frank
+												</td>
+												<td>
+													<span class="label label-danger">Danger
+													</span>
+												</td>
+												<td>June 20
+												</td>
+												<td>
+													<span class="text-danger">-$20
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Hosting press
+												</td>
+												<td>
+													<span class="label label-success">Success
+													</span>
+												</td>
+												<td>June 21
+												</td>
+												<td>
+													<span class="text-success">$20
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Zeasts
+												</td>
+												<td>
+													<span class="label label-inverse">Inverse
+													</span>
+												</td>
+												<td>June 22
+												</td>
+												<td>
+													<span class="text-inverse">$20
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Digital Agency
+												</td>
+												<td>
+													<span class="label label-success">Success
+													</span>
+												</td>
+												<td>June 21
+												</td>
+												<td>
+													<span class="text-success">-$24
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Jonathan
+												</td>
+												<td>
+													<span class="label label-info">info
+													</span>
+												</td>
+												<td>June 19
+												</td>
+												<td>
+													<span class="text-info">$84
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6 col-md-12">
+						<div class="dabba dabba-danger">
+							<div class="dabba-heading">
+								<h3 class="dabba-title"> Sales with Sparkline
+								</h3>
+							</div>
+							<div class="dabba-body">
+								<div class="table-responsive">
+									<table class="table table-strip">
+										<thead>
+											<tr>
+												<th>Product Name
+												</th>
+												<th>Stature
+												</th>
+												<th>Era
+												</th>
+												<th>Fare
+												</th>
+											</tr>
+										</thead>
+										<tbody id="tbody-sparkline">
+											<tr>
+												<td>CSK admin
+												</td>
+												<td data-sparkline="71, 78, 39, 66 ">
+												</td>
+												<td>June 18
+												</td>
+												<td>
+													<span class="text-Primary">$2400
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Agenses
+												</td>
+												<td data-sparkline="71, 78, 39, 66 ">
+												</td>
+												<td>June 19
+												</td>
+												<td>
+													<span class="text-info">$150
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Marvel
+												</td>
+												<td data-sparkline="3, 26, -41, -30 ; column">
+												</td>
+												<td>June 20
+												</td>
+												<td>
+													<span class="text-danger">-$20
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Joseph
+												</td>
+												<td data-sparkline="71, 78, 39, 66 ">
+												</td>
+												<td>June 21
+												</td>
+												<td>
+													<span class="text-success">$20
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Frank
+												</td>
+												<td data-sparkline="3, 26, -41, -30 ; column">
+												</td>
+												<td>June 22
+												</td>
+												<td>
+													<span class="text-inverse">$20
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Jonathan
+												</td>
+												<td data-sparkline="71, 78, 39, 66 ">
+												</td>
+												<td>June 21
+												</td>
+												<td>
+													<span class="text-success">-$24
+													</span>
+												</td>
+											</tr>
+											<tr>
+												<td>Zeasts
+												</td>
+												<td data-sparkline="71, 78, 39, 66 ">
+												</td>
+												<td>June 19
+												</td>
+												<td>
+													<span class="text-info">$84
+													</span>
+												</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-6">
+						<div class="panel panel-inverse quick-mail" id="mail">
+							<div class="panel-heading">
+								<h3 class="panel-title">Quick Mail
+								</h3>
+							</div>
+							<div class="panel-body">
+								<div class="input-text">
+									<div class="form-group">
+										<div class="input-group">
+											<span class="input-group-addon">To:
+											</span>
+											<input name="email_to" id="tf1" type="email" class="form-control tf-email" required="" placeholder="" value="zeasts@aol.com, zeasts@fb.com" />
+										</div>
+									</div>
+									<div class="form-group">
+										<div class="input-group">
+											<span class="input-group-addon">
+												Subject:
+											</span>
+											<input type="text" class="form-control" value="" placeholder="Subject" />
+										</div>
+									</div>
+								</div>
+								<div class="editor">
+									<div class="wysiwyg-editor">
+										<div class="wysiwyg-controls">
+											<a href='#' data-role='bold'>B
+											</a>
+											<a href='#' data-role='italic'>I
+											</a>
+											<a href='#' data-role='underline'>U
+											</a>
+											<a href='#' data-role='justifyleft'>
+												<i class="menu-left">
+												</i>
+											</a>
+											<a href='#' data-role='justifycenter'>
+												<i class="menu-center">
+												</i>
+											</a>
+											<a href='#' data-role='justifyright'>
+												<i class="menu-right">
+												</i>
+											</a>
+										</div>
+										<div class="wysiwyg-content" contenteditable="">
+											Hey,
+											<b>Zeasts
+											</b>,
+											<div>
+												I actually liked this template,
+												<i>
+												<u>http://Zeasts.com/admin
+												</u>
+												</i> of yours better.
+											</div>
+											<div>
+												Lets purchase it ?
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="panel-footer">
+								<div class="row">
+									<div class="col-xs-2">
+										<button class="btn btn-success">Send
+										</button>
+									</div>
+									<div class="col-xs-1">
+										<i class="fa fa-paperclip text-success attach">
+										</i>
+									</div>
+									<div class="col-xs-2 col-xs-push-7">
+										<i class="fa fa-trash text-danger trash">
+										</i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="google-panel">
+							<div class="panel panel-danger contacts">
+								<div class="panel-heading">
+									<h3 class="panel-title">Contacts
+									</h3>
+									<small class="panel-description">All Contacts list
+									</small>
+								</div>
+								<div class="panel-tabs">
+									<ul class="nav nav-tabs">
+										<li class="active">
+											<a href="#tab1default" data-toggle="tab">All
+											</a>
+										</li>
+										<li>
+											<a href="#tab2default" data-toggle="tab">Managers
+											</a>
+										</li>
+										<li>
+											<a href="#tab3default" data-toggle="tab">B. Manegrs
+											</a>
+										</li>
+										<li>
+											<a href="#tab4default" data-toggle="tab">Sellers
+											</a>
+										</li>
+									</ul>
+								</div>
+								<div class="panel-body">
+									<div class="tab-content contacts">
+										<div class="tab-pane fade in active" id="tab1default">
+											<div class="input-group input-group-sm">
+												<span class="input-group-addon sizing-addon3">
+													<i class="fa fa-search">
+													</i>
+												</span>
+												<input type="text" class="form-control" placeholder="Search..." >
+											</div>
+											<div class="table-responsive">
+												<table class="table table-striped">
+													<tbody>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="tab2default">
+											<div class="input-group input-group-sm">
+												<span class="input-group-addon sizing-addon3">
+													<i class="fa fa-search">
+													</i>
+												</span>
+												<input type="text" class="form-control" placeholder="Search..." >
+											</div>
+											<div class="table-responsive">
+												<table class="table table-striped">
+													<tbody>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="tab3default">
+											<div class="input-group input-group-sm">
+												<span class="input-group-addon sizing-addon3">
+													<i class="fa fa-search">
+													</i>
+												</span>
+												<input type="text" class="form-control" placeholder="Search..." >
+											</div>
+											<div class="table-responsive">
+												<table class="table table-striped">
+													<tbody>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="tab-pane fade" id="tab4default">
+											<div class="input-group input-group-sm">
+												<span class="input-group-addon sizing-addon3">
+													<i class="fa fa-search">
+													</i>
+												</span>
+												<input type="text" class="form-control" placeholder="Search..." >
+											</div>
+											<div class="table-responsive">
+												<table class="table table-striped">
+													<tbody>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+														<tr>
+															<td>
+																<div class="image">
+																	<img src="datas/images/avatars/captain-avatar.png" class="img-responsive" alt="avatar">
+																</div>
+															</td>
+															<td>
+																<h3 class="panel-title text-primary">Sean Paul
+																</h3>
+																<small>
+																<span>
+																	<i class="icon icon-li-pointer">
+																	</i> St. Louis, MO
+																</span>
+																<span>
+																	<i class="fa fa-briefcase">
+																	</i> St. Louis, MO
+																</span>
+																</small>
+															</td>
+															<td>
+																<small>
+																<a href="#mail">
+																	<span class="fa fa-envelope-o">
+																	</span>
+																</a>
+																<a href="#call">
+																	<span class="fa fa-phone">
+																	</span>
+																</a>
+																</small>
+															</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- # Page-content-wrapper -->
+		</div>
+		<!-- # Wrapper -->
+		<!-- GoogleApi jQuery -->
+		<script type="text/javascript" src="datas/assets/jquery-1.12.4/jquery-1.12.4.js"></script>
+		<!-- Bootstrap Core JavaScript -->
+		<script src="datas/bootstrap/js/bootstrap.min.js"></script>
+		<!-- Metis menu min.JS -->
+		<script type="text/javascript" src="datas/assets/metisMenu-master/dist/metisMenu.min.js"></script>
+		<!-- Slim Scroll -->
+		<script type="text/javascript" src="datas/assets/jQuery-slimScroll-1.3.8/jquery.slimscroll.js"></script>
+		<script type="text/javascript" src="datas/js/app.js"></script>
+		<!-- High Chats JS -->
+		<script type="text/javascript" src="datas/assets/Highcharts-4.2.5/js/highcharts.js"></script>
+		<script src="datas/assets/Highcharts-4.2.5/js/highcharts-more.js"></script>
+		<script type="text/javascript" src="datas/assets/chartist-js-develop/dist/chartist.js"></script>
+		<script type="text/javascript" src="datas/assets/chartist-plugin-tooltip-master/dist/chartist-plugin-tooltip.js"></script>
+		<!-- Sparkline -->
+		<script type="text/javascript" src="datas/js/jquery.sparkline.min.js"></script>
+		<!-- Token Field for Quick Mail -->
+		<link rel="stylesheet" type="text/css" href="datas/assets/bootstrap-tokenfield/css/bootstrap-tokenfield.css">
+		<script type="text/javascript" src="datas/assets/bootstrap-tokenfield/bootstrap-tokenfield.js"></script>
+		<!-- Flot JS -->
+		<script type="text/javascript" src="datas/js/jquery.flot.js"></script>
+		<!-- <script type="text/javascript" src="datas/assets/flot/jquery.flot.resize.js"></script> -->
+		<script src='datas/js/jquery.flot.spline.js'></script>
+		
+		<!-- Sweet Alert JS -->
+		<script src="datas/assets/sweetalert-master/dist/sweetalert-dev.js"></script>
+		<!-- Page Level JS -->
+		<script type="text/javascript" src="datas/js/dashboard1.js"></script>
+	</body>
+
+<!-- Mirrored from cskadmin.com/v3.2/dashboard-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Sat, 18 Mar 2017 13:38:10 GMT -->
+</html>
